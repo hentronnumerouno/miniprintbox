@@ -1,7 +1,9 @@
 site_name: Miniprintbox
 theme:
+  features:
+    - navigation.tracking
   language: en
-  logo: mpb1.svg
+  logo: mbd9.png
   name: material
   palette: 
     # Palette toggle for dark mode
@@ -24,4 +26,5 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+repo_url: https://github.com/hentronnumerouno/miniprintbox
 

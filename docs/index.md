@@ -1,3 +1,9 @@
 # Welcome to Miniprintbox
-Leverage Obico and Octoprint for 3D print monitoring and control.
+A resourceful project to monitor 3D prints on a budget. Leverage the power of Obico for print monitoring and Octoprint for printer control!
+
+## Installation
+Tested on Ubuntu 22.04, other version may work as well.
+
+    sudo apt update
+    sudo apt upgrade
  

@@ -9,10 +9,11 @@ A resourceful project to monitor 3D prints on a budget. Leverage the power of Ob
 Tested on Ubuntu 22.04, other version may work as well.
 
 !!! danger
-
 ```
 Always ensure that important data is backed up before beginning installation! 
 ```
+
+
 
 Update System
 

@@ -1,0 +1,2 @@
+[console_scripts]
+octoprint = octoprint:main

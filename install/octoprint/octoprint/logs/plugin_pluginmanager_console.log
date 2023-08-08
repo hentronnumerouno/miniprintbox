@@ -1,0 +1,457 @@
+2023-06-15 06:55:11,927   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmp_sjc2w69/OctoPrint-BedLevelVisualizer-master.zip --no-cache-dir
+2023-06-15 06:55:14,598 > Processing /tmp/tmp_sjc2w69/OctoPrint-BedLevelVisualizer-master.zip
+2023-06-15 06:55:14,599 > Preparing metadata (setup.py): started
+2023-06-15 06:55:18,103 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:55:18,104 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from Bed-Visualizer==1.1.1) (1.8.7)
+2023-06-15 06:55:18,104 > Requirement already satisfied: argon2-cffi<22,>=21.3.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (21.3.0)
+2023-06-15 06:55:18,104 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.5.2)
+2023-06-15 06:55:18,104 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.2.0)
+2023-06-15 06:55:18,104 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.10.0)
+2023-06-15 06:55:18,104 > Requirement already satisfied: flask<2.2,>=2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.1.3)
+2023-06-15 06:55:18,105 > Requirement already satisfied: sarge==0.1.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.1.6)
+2023-06-15 06:55:18,105 > Requirement already satisfied: OctoPrint-PiSupport>=2022.6.13 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2022.6.13)
+2023-06-15 06:55:18,105 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.33.4)
+2023-06-15 06:55:18,107 > Requirement already satisfied: netifaces<1,>=0.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.11.0)
+2023-06-15 06:55:18,107 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (3.5)
+2023-06-15 06:55:18,108 > Requirement already satisfied: netaddr<0.9,>=0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.8.0)
+2023-06-15 06:55:18,108 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2021.10.11)
+2023-06-15 06:55:18,109 > Requirement already satisfied: werkzeug<2.1,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.0.3)
+2023-06-15 06:55:18,109 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.0)
+2023-06-15 06:55:18,109 > Requirement already satisfied: psutil<6,>=5.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (5.9.4)
+2023-06-15 06:55:18,109 > Requirement already satisfied: websocket-client<2,>=1.2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.5.1)
+2023-06-15 06:55:18,109 > Requirement already satisfied: wrapt<1.15,>=1.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.14.1)
+2023-06-15 06:55:18,110 > Requirement already satisfied: zipstream-ng<2.0.0,>=1.3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.4.0)
+2023-06-15 06:55:18,110 > Requirement already satisfied: Flask-Limiter<3,>=2.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.9.2)
+2023-06-15 06:55:18,110 > Requirement already satisfied: tornado<7,>=6.0.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (6.2)
+2023-06-15 06:55:18,110 > Requirement already satisfied: sentry-sdk<2,>=1.5.7 in /octoprint/plugins/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.5.12)
+2023-06-15 06:55:18,110 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.5.0)
+2023-06-15 06:55:18,110 > Requirement already satisfied: watchdog<2,>=1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.0.2)
+2023-06-15 06:55:18,110 > Requirement already satisfied: frozendict<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.3.5)
+2023-06-15 06:55:18,110 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.5)
+2023-06-15 06:55:18,111 > Requirement already satisfied: regex in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2022.10.31)
+2023-06-15 06:55:18,111 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (5.4.1)
+2023-06-15 06:55:18,111 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2021.2.23)
+2023-06-15 06:55:18,111 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.18.3)
+2023-06-15 06:55:18,111 > Requirement already satisfied: unidecode in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.3.6)
+2023-06-15 06:55:18,111 > Requirement already satisfied: emoji<2,>=1.4.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.7.0)
+2023-06-15 06:55:18,112 > Requirement already satisfied: passlib<2,>=1.7.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.7.4)
+2023-06-15 06:55:18,112 > Requirement already satisfied: feedparser<7,>=6.0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (6.0.10)
+2023-06-15 06:55:18,112 > Requirement already satisfied: markdown<4,>=3.2.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (3.4.1)
+2023-06-15 06:55:18,112 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.9.6)
+2023-06-15 06:55:18,112 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (1.2.1)
+2023-06-15 06:55:18,112 > Requirement already satisfied: cachelib<0.3,>=0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (0.2.0)
+2023-06-15 06:55:18,112 > Requirement already satisfied: colorlog<7,>=6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (6.7.0)
+2023-06-15 06:55:18,112 > Requirement already satisfied: requests<3,>=2.26.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.28.2)
+2023-06-15 06:55:18,112 > Requirement already satisfied: Click<9,>=8.0.3 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (8.1.3)
+2023-06-15 06:55:18,113 > Requirement already satisfied: Flask-Babel<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Bed-Visualizer==1.1.1) (2.0.0)
+2023-06-15 06:55:18,113 > Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.8/site-packages (from argon2-cffi<22,>=21.3.0->OctoPrint->Bed-Visualizer==1.1.1) (21.2.0)
+2023-06-15 06:55:18,113 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.8->OctoPrint->Bed-Visualizer==1.1.1) (1.0.0)
+2023-06-15 06:55:18,113 > Requirement already satisfied: Jinja2>=3.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Bed-Visualizer==1.1.1) (3.1.2)
+2023-06-15 06:55:18,113 > Requirement already satisfied: itsdangerous>=2.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Bed-Visualizer==1.1.1) (2.1.2)
+2023-06-15 06:55:18,113 > Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Bed-Visualizer==1.1.1) (6.0.0)
+2023-06-15 06:55:18,113 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->Bed-Visualizer==1.1.1) (2.0)
+2023-06-15 06:55:18,113 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->Bed-Visualizer==1.1.1) (2.12.1)
+2023-06-15 06:55:18,114 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->Bed-Visualizer==1.1.1) (2022.7.1)
+2023-06-15 06:55:18,114 > Requirement already satisfied: ordered-set<5,>4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (4.1.0)
+2023-06-15 06:55:18,114 > Requirement already satisfied: typing-extensions>=4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (4.5.0)
+2023-06-15 06:55:18,114 > Requirement already satisfied: limits>=2.8 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (3.2.0)
+2023-06-15 06:55:18,114 > Requirement already satisfied: rich<13,>=12 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (12.6.0)
+2023-06-15 06:55:18,114 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->Bed-Visualizer==1.1.1) (1.26.14)
+2023-06-15 06:55:18,114 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->Bed-Visualizer==1.1.1) (2022.12.7)
+2023-06-15 06:55:18,114 > Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->Bed-Visualizer==1.1.1) (3.0.1)
+2023-06-15 06:55:18,115 > Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->Bed-Visualizer==1.1.1) (3.4)
+2023-06-15 06:55:18,115 > Requirement already satisfied: ifaddr>=0.1.7 in /usr/local/lib/python3.8/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->Bed-Visualizer==1.1.1) (0.2.0)
+2023-06-15 06:55:18,115 > Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->flask<2.2,>=2.1->OctoPrint->Bed-Visualizer==1.1.1) (3.15.0)
+2023-06-15 06:55:18,115 > Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.8/site-packages (from Jinja2>=3.0->flask<2.2,>=2.1->OctoPrint->Bed-Visualizer==1.1.1) (2.1.2)
+2023-06-15 06:55:18,115 > Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (57.5.0)
+2023-06-15 06:55:18,115 > Requirement already satisfied: packaging<24,>=21 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (23.0)
+2023-06-15 06:55:18,115 > Requirement already satisfied: deprecated>=1.2 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (1.2.13)
+2023-06-15 06:55:18,115 > Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (0.9.1)
+2023-06-15 06:55:18,116 > Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->Bed-Visualizer==1.1.1) (2.14.0)
+2023-06-15 06:55:18,116 > Requirement already satisfied: cffi>=1.0.1 in /usr/local/lib/python3.8/site-packages (from argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->Bed-Visualizer==1.1.1) (1.15.1)
+2023-06-15 06:55:18,116 > Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->Bed-Visualizer==1.1.1) (2.21)
+2023-06-15 06:55:18,116 > Building wheels for collected packages: Bed-Visualizer
+2023-06-15 06:55:18,116 > Building wheel for Bed-Visualizer (setup.py): started
+2023-06-15 06:55:20,834 > Building wheel for Bed-Visualizer (setup.py): finished with status 'done'
+2023-06-15 06:55:20,834 > Created wheel for Bed-Visualizer: filename=Bed_Visualizer-1.1.1-py3-none-any.whl size=4182731 sha256=7ee97f8d306ff9a0faf112ad47df5fd42b2684e2b2630a44f22d214b9b2bcf2c
+2023-06-15 06:55:20,835 > Stored in directory: /tmp/pip-ephem-wheel-cache-l0wbojc2/wheels/9f/3c/28/5c6390b7e6839967f94d3ccde0b940079763627f568fc8bd80
+2023-06-15 06:55:20,835 > Successfully built Bed-Visualizer
+2023-06-15 06:55:20,835 > Installing collected packages: Bed-Visualizer
+2023-06-15 06:55:20,835 > Successfully installed Bed-Visualizer-1.1.1
+2023-06-15 06:55:20,838 ! WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-06-15 06:55:30,721   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmpsrctvjgp/OctoPrint-PrintTimeGenius-master.zip --no-cache-dir
+2023-06-15 06:55:33,233 > Processing /tmp/tmpsrctvjgp/OctoPrint-PrintTimeGenius-master.zip
+2023-06-15 06:55:33,233 > Preparing metadata (setup.py): started
+2023-06-15 06:55:36,620 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:55:36,620 > Requirement already satisfied: OctoPrint>=1.3.9rc1 in /usr/local/lib/python3.8/site-packages (from OctoPrint-PrintTimeGenius==2.3.0) (1.8.7)
+2023-06-15 06:55:36,622 > Requirement already satisfied: psutil in /usr/local/lib/python3.8/site-packages (from OctoPrint-PrintTimeGenius==2.3.0) (5.9.4)
+2023-06-15 06:55:36,623 > Requirement already satisfied: sarge in /usr/local/lib/python3.8/site-packages (from OctoPrint-PrintTimeGenius==2.3.0) (0.1.6)
+2023-06-15 06:55:36,624 > Requirement already satisfied: OctoPrint-PiSupport>=2022.6.13 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2022.6.13)
+2023-06-15 06:55:36,624 > Requirement already satisfied: colorlog<7,>=6 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (6.7.0)
+2023-06-15 06:55:36,625 > Requirement already satisfied: sentry-sdk<2,>=1.5.7 in /octoprint/plugins/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.5.12)
+2023-06-15 06:55:36,626 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.18.3)
+2023-06-15 06:55:36,627 > Requirement already satisfied: wrapt<1.15,>=1.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.14.1)
+2023-06-15 06:55:36,628 > Requirement already satisfied: netifaces<1,>=0.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.11.0)
+2023-06-15 06:55:36,628 > Requirement already satisfied: cachelib<0.3,>=0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.2.0)
+2023-06-15 06:55:36,629 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.5)
+2023-06-15 06:55:36,629 > Requirement already satisfied: requests<3,>=2.26.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.28.2)
+2023-06-15 06:55:36,630 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.0)
+2023-06-15 06:55:36,632 > Requirement already satisfied: emoji<2,>=1.4.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.7.0)
+2023-06-15 06:55:36,632 > Requirement already satisfied: regex in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2022.10.31)
+2023-06-15 06:55:36,633 > Requirement already satisfied: Click<9,>=8.0.3 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (8.1.3)
+2023-06-15 06:55:36,633 > Requirement already satisfied: argon2-cffi<22,>=21.3.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (21.3.0)
+2023-06-15 06:55:36,634 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.5.0)
+2023-06-15 06:55:36,634 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (5.4.1)
+2023-06-15 06:55:36,635 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2021.10.11)
+2023-06-15 06:55:36,635 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.2.0)
+2023-06-15 06:55:36,636 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.9.6)
+2023-06-15 06:55:36,637 > Requirement already satisfied: Flask-Babel<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.0.0)
+2023-06-15 06:55:36,637 > Requirement already satisfied: frozendict<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.3.5)
+2023-06-15 06:55:36,637 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2021.2.23)
+2023-06-15 06:55:36,638 > Requirement already satisfied: Flask-Limiter<3,>=2.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.9.2)
+2023-06-15 06:55:36,639 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.2.1)
+2023-06-15 06:55:36,639 > Requirement already satisfied: watchdog<2,>=1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.0.2)
+2023-06-15 06:55:36,640 > Requirement already satisfied: websocket-client<2,>=1.2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.5.1)
+2023-06-15 06:55:36,640 > Requirement already satisfied: markdown<4,>=3.2.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.4.1)
+2023-06-15 06:55:36,641 > Requirement already satisfied: unidecode in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.3.6)
+2023-06-15 06:55:36,641 > Requirement already satisfied: flask<2.2,>=2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.1.3)
+2023-06-15 06:55:36,642 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.5)
+2023-06-15 06:55:36,642 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.33.4)
+2023-06-15 06:55:36,642 > Requirement already satisfied: netaddr<0.9,>=0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.8.0)
+2023-06-15 06:55:36,642 > Requirement already satisfied: passlib<2,>=1.7.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.7.4)
+2023-06-15 06:55:36,642 > Requirement already satisfied: tornado<7,>=6.0.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (6.2)
+2023-06-15 06:55:36,643 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.10.0)
+2023-06-15 06:55:36,643 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.5.2)
+2023-06-15 06:55:36,643 > Requirement already satisfied: werkzeug<2.1,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.0.3)
+2023-06-15 06:55:36,643 > Requirement already satisfied: feedparser<7,>=6.0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (6.0.10)
+2023-06-15 06:55:36,643 > Requirement already satisfied: zipstream-ng<2.0.0,>=1.3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.4.0)
+2023-06-15 06:55:36,643 > Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.8/site-packages (from argon2-cffi<22,>=21.3.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (21.2.0)
+2023-06-15 06:55:36,644 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.8->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.0.0)
+2023-06-15 06:55:36,644 > Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (6.0.0)
+2023-06-15 06:55:36,644 > Requirement already satisfied: Jinja2>=3.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.1.2)
+2023-06-15 06:55:36,644 > Requirement already satisfied: itsdangerous>=2.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.1.2)
+2023-06-15 06:55:36,644 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.0)
+2023-06-15 06:55:36,644 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.12.1)
+2023-06-15 06:55:36,645 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2022.7.1)
+2023-06-15 06:55:36,645 > Requirement already satisfied: rich<13,>=12 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (12.6.0)
+2023-06-15 06:55:36,645 > Requirement already satisfied: typing-extensions>=4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (4.5.0)
+2023-06-15 06:55:36,645 > Requirement already satisfied: ordered-set<5,>4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (4.1.0)
+2023-06-15 06:55:36,645 > Requirement already satisfied: limits>=2.8 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.2.0)
+2023-06-15 06:55:36,645 > Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.4)
+2023-06-15 06:55:36,645 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.26.14)
+2023-06-15 06:55:36,646 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2022.12.7)
+2023-06-15 06:55:36,646 > Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.0.1)
+2023-06-15 06:55:36,646 > Requirement already satisfied: ifaddr>=0.1.7 in /usr/local/lib/python3.8/site-packages (from zeroconf<0.34,>=0.33->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.2.0)
+2023-06-15 06:55:36,646 > Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->flask<2.2,>=2.1->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (3.15.0)
+2023-06-15 06:55:36,646 > Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.8/site-packages (from Jinja2>=3.0->flask<2.2,>=2.1->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.1.2)
+2023-06-15 06:55:36,646 > Requirement already satisfied: packaging<24,>=21 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (23.0)
+2023-06-15 06:55:36,647 > Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (57.5.0)
+2023-06-15 06:55:36,647 > Requirement already satisfied: deprecated>=1.2 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.2.13)
+2023-06-15 06:55:36,647 > Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (0.9.1)
+2023-06-15 06:55:36,647 > Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.14.0)
+2023-06-15 06:55:36,647 > Requirement already satisfied: cffi>=1.0.1 in /usr/local/lib/python3.8/site-packages (from argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (1.15.1)
+2023-06-15 06:55:36,647 > Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint>=1.3.9rc1->OctoPrint-PrintTimeGenius==2.3.0) (2.21)
+2023-06-15 06:55:36,648 > Building wheels for collected packages: OctoPrint-PrintTimeGenius
+2023-06-15 06:55:36,648 > Building wheel for OctoPrint-PrintTimeGenius (setup.py): started
+2023-06-15 06:55:40,984 > Building wheel for OctoPrint-PrintTimeGenius (setup.py): finished with status 'done'
+2023-06-15 06:55:40,985 > Created wheel for OctoPrint-PrintTimeGenius: filename=OctoPrint_PrintTimeGenius-2.3.0-py3-none-any.whl size=7782351 sha256=e426e81e925275dd6d3ac3472eef898d17afc47dc6727d48d4bd31036bde1bd4
+2023-06-15 06:55:40,985 > Stored in directory: /tmp/pip-ephem-wheel-cache-z392cdp0/wheels/4c/a9/af/0d9348914cf03c07aa480bd888adf96939782636765eb0ff71
+2023-06-15 06:55:40,986 > Successfully built OctoPrint-PrintTimeGenius
+2023-06-15 06:55:40,987 > Installing collected packages: OctoPrint-PrintTimeGenius
+2023-06-15 06:55:40,987 > Successfully installed OctoPrint-PrintTimeGenius-2.3.0
+2023-06-15 06:55:40,990 ! WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-06-15 06:55:59,544   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmps6utnt6z/OctoPrint-Dashboard-master.zip --no-cache-dir
+2023-06-15 06:56:01,812 > Processing /tmp/tmps6utnt6z/OctoPrint-Dashboard-master.zip
+2023-06-15 06:56:01,812 > Preparing metadata (setup.py): started
+2023-06-15 06:56:05,229 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:56:05,229 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from OctoPrint-Dashboard==1.19.9) (1.8.7)
+2023-06-15 06:56:05,229 > Requirement already satisfied: psutil in /usr/local/lib/python3.8/site-packages (from OctoPrint-Dashboard==1.19.9) (5.9.4)
+2023-06-15 06:56:05,230 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.2.0)
+2023-06-15 06:56:05,230 > Requirement already satisfied: werkzeug<2.1,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.0.3)
+2023-06-15 06:56:05,230 > Requirement already satisfied: Flask-Limiter<3,>=2.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.9.2)
+2023-06-15 06:56:05,230 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2021.2.23)
+2023-06-15 06:56:05,230 > Requirement already satisfied: unidecode in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.3.6)
+2023-06-15 06:56:05,231 > Requirement already satisfied: Click<9,>=8.0.3 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (8.1.3)
+2023-06-15 06:56:05,234 > Requirement already satisfied: sentry-sdk<2,>=1.5.7 in /octoprint/plugins/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.5.12)
+2023-06-15 06:56:05,235 > Requirement already satisfied: zipstream-ng<2.0.0,>=1.3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.4.0)
+2023-06-15 06:56:05,235 > Requirement already satisfied: regex in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2022.10.31)
+2023-06-15 06:56:05,235 > Requirement already satisfied: wrapt<1.15,>=1.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.14.1)
+2023-06-15 06:56:05,235 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.33.4)
+2023-06-15 06:56:05,235 > Requirement already satisfied: emoji<2,>=1.4.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.7.0)
+2023-06-15 06:56:05,236 > Requirement already satisfied: sarge==0.1.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.1.6)
+2023-06-15 06:56:05,236 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (5.4.1)
+2023-06-15 06:56:05,236 > Requirement already satisfied: requests<3,>=2.26.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.28.2)
+2023-06-15 06:56:05,236 > Requirement already satisfied: passlib<2,>=1.7.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.7.4)
+2023-06-15 06:56:05,236 > Requirement already satisfied: tornado<7,>=6.0.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (6.2)
+2023-06-15 06:56:05,236 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.5)
+2023-06-15 06:56:05,237 > Requirement already satisfied: feedparser<7,>=6.0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (6.0.10)
+2023-06-15 06:56:05,237 > Requirement already satisfied: Flask-Babel<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.0.0)
+2023-06-15 06:56:05,237 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2021.10.11)
+2023-06-15 06:56:05,237 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.9.6)
+2023-06-15 06:56:05,237 > Requirement already satisfied: netifaces<1,>=0.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.11.0)
+2023-06-15 06:56:05,237 > Requirement already satisfied: OctoPrint-PiSupport>=2022.6.13 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2022.6.13)
+2023-06-15 06:56:05,237 > Requirement already satisfied: flask<2.2,>=2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.1.3)
+2023-06-15 06:56:05,238 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.5.2)
+2023-06-15 06:56:05,238 > Requirement already satisfied: argon2-cffi<22,>=21.3.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (21.3.0)
+2023-06-15 06:56:05,238 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.2.1)
+2023-06-15 06:56:05,238 > Requirement already satisfied: netaddr<0.9,>=0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.8.0)
+2023-06-15 06:56:05,238 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.10.0)
+2023-06-15 06:56:05,238 > Requirement already satisfied: colorlog<7,>=6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (6.7.0)
+2023-06-15 06:56:05,238 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (3.5)
+2023-06-15 06:56:05,239 > Requirement already satisfied: cachelib<0.3,>=0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.2.0)
+2023-06-15 06:56:05,239 > Requirement already satisfied: frozendict<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.3.5)
+2023-06-15 06:56:05,239 > Requirement already satisfied: markdown<4,>=3.2.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (3.4.1)
+2023-06-15 06:56:05,239 > Requirement already satisfied: watchdog<2,>=1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.0.2)
+2023-06-15 06:56:05,239 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.5.0)
+2023-06-15 06:56:05,239 > Requirement already satisfied: websocket-client<2,>=1.2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (1.5.1)
+2023-06-15 06:56:05,239 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (2.0)
+2023-06-15 06:56:05,240 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-Dashboard==1.19.9) (0.18.3)
+2023-06-15 06:56:05,240 > Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.8/site-packages (from argon2-cffi<22,>=21.3.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (21.2.0)
+2023-06-15 06:56:05,240 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.8->OctoPrint->OctoPrint-Dashboard==1.19.9) (1.0.0)
+2023-06-15 06:56:05,240 > Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->OctoPrint-Dashboard==1.19.9) (6.0.0)
+2023-06-15 06:56:05,240 > Requirement already satisfied: Jinja2>=3.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->OctoPrint-Dashboard==1.19.9) (3.1.2)
+2023-06-15 06:56:05,240 > Requirement already satisfied: itsdangerous>=2.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.1.2)
+2023-06-15 06:56:05,240 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.0)
+2023-06-15 06:56:05,241 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (2022.7.1)
+2023-06-15 06:56:05,241 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.12.1)
+2023-06-15 06:56:05,241 > Requirement already satisfied: ordered-set<5,>4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (4.1.0)
+2023-06-15 06:56:05,241 > Requirement already satisfied: typing-extensions>=4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (4.5.0)
+2023-06-15 06:56:05,241 > Requirement already satisfied: limits>=2.8 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (3.2.0)
+2023-06-15 06:56:05,241 > Requirement already satisfied: rich<13,>=12 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (12.6.0)
+2023-06-15 06:56:05,242 > Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (3.0.1)
+2023-06-15 06:56:05,242 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (1.26.14)
+2023-06-15 06:56:05,242 > Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (3.4)
+2023-06-15 06:56:05,242 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (2022.12.7)
+2023-06-15 06:56:05,242 > Requirement already satisfied: ifaddr>=0.1.7 in /usr/local/lib/python3.8/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->OctoPrint-Dashboard==1.19.9) (0.2.0)
+2023-06-15 06:56:05,242 > Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->flask<2.2,>=2.1->OctoPrint->OctoPrint-Dashboard==1.19.9) (3.15.0)
+2023-06-15 06:56:05,242 > Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.8/site-packages (from Jinja2>=3.0->flask<2.2,>=2.1->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.1.2)
+2023-06-15 06:56:05,243 > Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (57.5.0)
+2023-06-15 06:56:05,243 > Requirement already satisfied: packaging<24,>=21 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (23.0)
+2023-06-15 06:56:05,243 > Requirement already satisfied: deprecated>=1.2 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (1.2.13)
+2023-06-15 06:56:05,243 > Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (0.9.1)
+2023-06-15 06:56:05,244 > Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.14.0)
+2023-06-15 06:56:05,244 > Requirement already satisfied: cffi>=1.0.1 in /usr/local/lib/python3.8/site-packages (from argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (1.15.1)
+2023-06-15 06:56:05,244 > Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->OctoPrint-Dashboard==1.19.9) (2.21)
+2023-06-15 06:56:05,244 > Building wheels for collected packages: OctoPrint-Dashboard
+2023-06-15 06:56:05,244 > Building wheel for OctoPrint-Dashboard (setup.py): started
+2023-06-15 06:56:06,703 > Building wheel for OctoPrint-Dashboard (setup.py): finished with status 'done'
+2023-06-15 06:56:06,705 > Created wheel for OctoPrint-Dashboard: filename=OctoPrint_Dashboard-1.19.9-py3-none-any.whl size=290341 sha256=f70466608b7d8289222c336cfece95d5cbd7099dcda847f7e0e799d0efbbf60c
+2023-06-15 06:56:06,706 > Stored in directory: /tmp/pip-ephem-wheel-cache-2lvikrj6/wheels/b3/0c/d6/3685a40d67106eeac909741bae1b2e2a0c4c4432ea1c8bdf3f
+2023-06-15 06:56:06,707 > Successfully built OctoPrint-Dashboard
+2023-06-15 06:56:06,708 > Installing collected packages: OctoPrint-Dashboard
+2023-06-15 06:56:06,708 > Successfully installed OctoPrint-Dashboard-1.19.9
+2023-06-15 06:56:06,713 ! WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-06-15 06:56:21,701   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmpu3_rneq_/OctoPrint-UICustomizer-main.zip --no-cache-dir
+2023-06-15 06:56:23,961 > Processing /tmp/tmpu3_rneq_/OctoPrint-UICustomizer-main.zip
+2023-06-15 06:56:23,961 > Preparing metadata (setup.py): started
+2023-06-15 06:56:27,253 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:56:27,255 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from UI-Customizer==0.1.9.4) (1.8.7)
+2023-06-15 06:56:27,255 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2021.2.23)
+2023-06-15 06:56:27,255 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.18.3)
+2023-06-15 06:56:27,256 > Requirement already satisfied: psutil<6,>=5.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (5.9.4)
+2023-06-15 06:56:27,257 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.2.1)
+2023-06-15 06:56:27,257 > Requirement already satisfied: sarge==0.1.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.1.6)
+2023-06-15 06:56:27,257 > Requirement already satisfied: OctoPrint-PiSupport>=2022.6.13 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2022.6.13)
+2023-06-15 06:56:27,258 > Requirement already satisfied: tornado<7,>=6.0.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (6.2)
+2023-06-15 06:56:27,258 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.0)
+2023-06-15 06:56:27,259 > Requirement already satisfied: flask<2.2,>=2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.1.3)
+2023-06-15 06:56:27,259 > Requirement already satisfied: Flask-Limiter<3,>=2.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.9.2)
+2023-06-15 06:56:27,260 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.5.2)
+2023-06-15 06:56:27,260 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.9.6)
+2023-06-15 06:56:27,261 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (5.4.1)
+2023-06-15 06:56:27,261 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (3.5)
+2023-06-15 06:56:27,262 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.2.0)
+2023-06-15 06:56:27,263 > Requirement already satisfied: feedparser<7,>=6.0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (6.0.10)
+2023-06-15 06:56:27,263 > Requirement already satisfied: websocket-client<2,>=1.2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.5.1)
+2023-06-15 06:56:27,264 > Requirement already satisfied: netaddr<0.9,>=0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.8.0)
+2023-06-15 06:56:27,264 > Requirement already satisfied: emoji<2,>=1.4.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.7.0)
+2023-06-15 06:56:27,264 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.5.0)
+2023-06-15 06:56:27,264 > Requirement already satisfied: zipstream-ng<2.0.0,>=1.3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.4.0)
+2023-06-15 06:56:27,265 > Requirement already satisfied: requests<3,>=2.26.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.28.2)
+2023-06-15 06:56:27,265 > Requirement already satisfied: cachelib<0.3,>=0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.2.0)
+2023-06-15 06:56:27,265 > Requirement already satisfied: wrapt<1.15,>=1.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.14.1)
+2023-06-15 06:56:27,265 > Requirement already satisfied: unidecode in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.3.6)
+2023-06-15 06:56:27,266 > Requirement already satisfied: werkzeug<2.1,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.0.3)
+2023-06-15 06:56:27,266 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.10.0)
+2023-06-15 06:56:27,266 > Requirement already satisfied: netifaces<1,>=0.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.11.0)
+2023-06-15 06:56:27,267 > Requirement already satisfied: markdown<4,>=3.2.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (3.4.1)
+2023-06-15 06:56:27,268 > Requirement already satisfied: colorlog<7,>=6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (6.7.0)
+2023-06-15 06:56:27,268 > Requirement already satisfied: watchdog<2,>=1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.0.2)
+2023-06-15 06:56:27,268 > Requirement already satisfied: Click<9,>=8.0.3 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (8.1.3)
+2023-06-15 06:56:27,268 > Requirement already satisfied: regex in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2022.10.31)
+2023-06-15 06:56:27,268 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.5)
+2023-06-15 06:56:27,269 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (0.33.4)
+2023-06-15 06:56:27,269 > Requirement already satisfied: argon2-cffi<22,>=21.3.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (21.3.0)
+2023-06-15 06:56:27,269 > Requirement already satisfied: passlib<2,>=1.7.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.7.4)
+2023-06-15 06:56:27,269 > Requirement already satisfied: Flask-Babel<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.0.0)
+2023-06-15 06:56:27,269 > Requirement already satisfied: frozendict<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2.3.5)
+2023-06-15 06:56:27,269 > Requirement already satisfied: sentry-sdk<2,>=1.5.7 in /octoprint/plugins/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (1.5.12)
+2023-06-15 06:56:27,270 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->UI-Customizer==0.1.9.4) (2021.10.11)
+2023-06-15 06:56:27,270 > Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.8/site-packages (from argon2-cffi<22,>=21.3.0->OctoPrint->UI-Customizer==0.1.9.4) (21.2.0)
+2023-06-15 06:56:27,270 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.8->OctoPrint->UI-Customizer==0.1.9.4) (1.0.0)
+2023-06-15 06:56:27,270 > Requirement already satisfied: itsdangerous>=2.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->UI-Customizer==0.1.9.4) (2.1.2)
+2023-06-15 06:56:27,270 > Requirement already satisfied: Jinja2>=3.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->UI-Customizer==0.1.9.4) (3.1.2)
+2023-06-15 06:56:27,271 > Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->UI-Customizer==0.1.9.4) (6.0.0)
+2023-06-15 06:56:27,271 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->UI-Customizer==0.1.9.4) (2.0)
+2023-06-15 06:56:27,271 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->UI-Customizer==0.1.9.4) (2.12.1)
+2023-06-15 06:56:27,271 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->UI-Customizer==0.1.9.4) (2022.7.1)
+2023-06-15 06:56:27,271 > Requirement already satisfied: ordered-set<5,>4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (4.1.0)
+2023-06-15 06:56:27,271 > Requirement already satisfied: limits>=2.8 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (3.2.0)
+2023-06-15 06:56:27,272 > Requirement already satisfied: rich<13,>=12 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (12.6.0)
+2023-06-15 06:56:27,272 > Requirement already satisfied: typing-extensions>=4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (4.5.0)
+2023-06-15 06:56:27,272 > Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.9.4) (3.0.1)
+2023-06-15 06:56:27,272 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.9.4) (2022.12.7)
+2023-06-15 06:56:27,272 > Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.9.4) (3.4)
+2023-06-15 06:56:27,272 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.9.4) (1.26.14)
+2023-06-15 06:56:27,273 > Requirement already satisfied: ifaddr>=0.1.7 in /usr/local/lib/python3.8/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->UI-Customizer==0.1.9.4) (0.2.0)
+2023-06-15 06:56:27,273 > Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->flask<2.2,>=2.1->OctoPrint->UI-Customizer==0.1.9.4) (3.15.0)
+2023-06-15 06:56:27,273 > Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.8/site-packages (from Jinja2>=3.0->flask<2.2,>=2.1->OctoPrint->UI-Customizer==0.1.9.4) (2.1.2)
+2023-06-15 06:56:27,273 > Requirement already satisfied: deprecated>=1.2 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (1.2.13)
+2023-06-15 06:56:27,273 > Requirement already satisfied: packaging<24,>=21 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (23.0)
+2023-06-15 06:56:27,273 > Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (57.5.0)
+2023-06-15 06:56:27,273 > Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (0.9.1)
+2023-06-15 06:56:27,274 > Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->UI-Customizer==0.1.9.4) (2.14.0)
+2023-06-15 06:56:27,274 > Requirement already satisfied: cffi>=1.0.1 in /usr/local/lib/python3.8/site-packages (from argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->UI-Customizer==0.1.9.4) (1.15.1)
+2023-06-15 06:56:27,274 > Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->UI-Customizer==0.1.9.4) (2.21)
+2023-06-15 06:56:27,274 > Building wheels for collected packages: UI-Customizer
+2023-06-15 06:56:27,274 > Building wheel for UI-Customizer (setup.py): started
+2023-06-15 06:56:28,686 > Building wheel for UI-Customizer (setup.py): finished with status 'done'
+2023-06-15 06:56:28,686 > Created wheel for UI-Customizer: filename=UI_Customizer-0.1.9.4-py3-none-any.whl size=520608 sha256=27b91dd53c21aceb724e5fe796ec0c5ef2a582f949edd7d95e453b865dcff58d
+2023-06-15 06:56:28,687 > Stored in directory: /tmp/pip-ephem-wheel-cache-1s5w2ho1/wheels/87/f5/a3/ddcf8d4e411927ebc0f7d2665b360774c400c5e0229f8eee90
+2023-06-15 06:56:28,687 > Successfully built UI-Customizer
+2023-06-15 06:56:28,687 > Installing collected packages: UI-Customizer
+2023-06-15 06:56:28,687 > Successfully installed UI-Customizer-0.1.9.4
+2023-06-15 06:56:28,691 ! WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-06-15 06:57:04,440   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmp0hti1ycw/Octoslack-master.zip --no-cache-dir
+2023-06-15 06:57:06,672 > Processing /tmp/tmp0hti1ycw/Octoslack-master.zip
+2023-06-15 06:57:06,673 > Preparing metadata (setup.py): started
+2023-06-15 06:57:08,174 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:57:08,174 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from Octoslack==2.2.0) (1.8.7)
+2023-06-15 06:57:08,175 > Collecting tinys3
+2023-06-15 06:57:08,175 > Downloading tinys3-0.1.12.tar.gz (13 kB)
+2023-06-15 06:57:08,175 > Preparing metadata (setup.py): started
+2023-06-15 06:57:09,178 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:57:09,179 > Collecting imgurpython
+2023-06-15 06:57:09,180 > Downloading imgurpython-1.1.7.tar.gz (8.4 kB)
+2023-06-15 06:57:09,180 > Preparing metadata (setup.py): started
+2023-06-15 06:57:11,354 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:57:11,355 > Requirement already satisfied: netifaces in /usr/local/lib/python3.8/site-packages (from Octoslack==2.2.0) (0.11.0)
+2023-06-15 06:57:11,356 > Requirement already satisfied: sarge in /usr/local/lib/python3.8/site-packages (from Octoslack==2.2.0) (0.1.6)
+2023-06-15 06:57:11,356 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Octoslack==2.2.0) (2022.7.1)
+2023-06-15 06:57:11,356 > Collecting pushbullet.py
+2023-06-15 06:57:11,357 > Downloading pushbullet.py-0.12.0-py2.py3-none-any.whl (10 kB)
+2023-06-15 06:57:11,357 > Collecting pathlib2
+2023-06-15 06:57:11,357 > Downloading pathlib2-2.3.7.post1-py2.py3-none-any.whl (18 kB)
+2023-06-15 06:57:11,358 > Collecting pushover_complete
+2023-06-15 06:57:11,359 > Downloading pushover_complete-1.1.1-py2.py3-none-any.whl (8.3 kB)
+2023-06-15 06:57:11,360 > Collecting rocket-python
+2023-06-15 06:57:11,360 > Downloading rocket_python-1.3.3-py2.py3-none-any.whl (22 kB)
+2023-06-15 06:57:11,361 > Collecting matrix_client
+2023-06-15 06:57:11,361 > Downloading matrix_client-0.4.0-py2.py3-none-any.whl (43 kB)
+2023-06-15 06:57:11,362 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.5/43.5 KB 25.6 MB/s eta 0:00:00
+2023-06-15 06:57:11,362 > Collecting discord-webhook
+2023-06-15 06:57:11,363 > Downloading discord_webhook-1.1.0-py3-none-any.whl (12 kB)
+2023-06-15 06:57:11,363 > Collecting pymsteams
+2023-06-15 06:57:11,363 > Downloading pymsteams-0.2.2.tar.gz (9.6 kB)
+2023-06-15 06:57:11,364 > Preparing metadata (setup.py): started
+2023-06-15 06:57:13,031 > Preparing metadata (setup.py): finished with status 'done'
+2023-06-15 06:57:13,031 > Requirement already satisfied: six>=1.9.0 in /octoprint/plugins/lib/python3.8/site-packages (from Octoslack==2.2.0) (1.16.0)
+2023-06-15 06:57:13,031 > Collecting slack_sdk>3.0.0
+2023-06-15 06:57:13,032 > Downloading slack_sdk-3.21.3-py2.py3-none-any.whl (276 kB)
+2023-06-15 06:57:13,032 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 276.5/276.5 KB 4.3 MB/s eta 0:00:00
+2023-06-15 06:57:13,032 > Collecting minio
+2023-06-15 06:57:13,032 > Downloading minio-7.1.15-py3-none-any.whl (77 kB)
+2023-06-15 06:57:13,032 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.4/77.4 KB 4.5 MB/s eta 0:00:00
+2023-06-15 06:57:15,036 > Collecting Pillow
+2023-06-15 06:57:15,036 > Downloading Pillow-9.5.0-cp38-cp38-manylinux_2_28_x86_64.whl (3.4 MB)
+2023-06-15 06:57:19,039 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 3.8 MB/s eta 0:00:00
+2023-06-15 06:57:19,039 > Collecting humanize
+2023-06-15 06:57:19,040 > Downloading humanize-4.6.0-py3-none-any.whl (109 kB)
+2023-06-15 06:57:19,040 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.0/110.0 KB 1.8 MB/s eta 0:00:00
+2023-06-15 06:57:19,040 > Requirement already satisfied: requests<3.0.0,>=2.28.1 in /usr/local/lib/python3.8/site-packages (from discord-webhook->Octoslack==2.2.0) (2.28.2)
+2023-06-15 06:57:19,041 > Requirement already satisfied: urllib3~=1.21 in /usr/local/lib/python3.8/site-packages (from matrix_client->Octoslack==2.2.0) (1.26.14)
+2023-06-15 06:57:19,041 > Requirement already satisfied: certifi in /usr/local/lib/python3.8/site-packages (from minio->Octoslack==2.2.0) (2022.12.7)
+2023-06-15 06:57:19,041 > Requirement already satisfied: zipstream-ng<2.0.0,>=1.3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.4.0)
+2023-06-15 06:57:19,042 > Requirement already satisfied: unidecode in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.3.6)
+2023-06-15 06:57:19,042 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2021.2.23)
+2023-06-15 06:57:19,043 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.0)
+2023-06-15 06:57:19,043 > Requirement already satisfied: emoji<2,>=1.4.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.7.0)
+2023-06-15 06:57:19,043 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (0.18.3)
+2023-06-15 06:57:19,044 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (5.4.1)
+2023-06-15 06:57:19,044 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.5.2)
+2023-06-15 06:57:19,044 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (0.33.4)
+2023-06-15 06:57:19,044 > Requirement already satisfied: cachelib<0.3,>=0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (0.2.0)
+2023-06-15 06:57:19,045 > Requirement already satisfied: wrapt<1.15,>=1.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.14.1)
+2023-06-15 06:57:19,045 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.2.1)
+2023-06-15 06:57:19,045 > Requirement already satisfied: psutil<6,>=5.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (5.9.4)
+2023-06-15 06:57:19,046 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.5)
+2023-06-15 06:57:19,047 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.10.0)
+2023-06-15 06:57:19,047 > Requirement already satisfied: werkzeug<2.1,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.0.3)
+2023-06-15 06:57:19,047 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (3.5)
+2023-06-15 06:57:19,047 > Requirement already satisfied: sentry-sdk<2,>=1.5.7 in /octoprint/plugins/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.5.12)
+2023-06-15 06:57:19,047 > Requirement already satisfied: tornado<7,>=6.0.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (6.2)
+2023-06-15 06:57:19,048 > Requirement already satisfied: markdown<4,>=3.2.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (3.4.1)
+2023-06-15 06:57:19,048 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2021.10.11)
+2023-06-15 06:57:19,048 > Requirement already satisfied: OctoPrint-PiSupport>=2022.6.13 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2022.6.13)
+2023-06-15 06:57:19,048 > Requirement already satisfied: frozendict<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.3.5)
+2023-06-15 06:57:19,049 > Requirement already satisfied: websocket-client<2,>=1.2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.5.1)
+2023-06-15 06:57:19,049 > Requirement already satisfied: passlib<2,>=1.7.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.7.4)
+2023-06-15 06:57:19,049 > Requirement already satisfied: flask<2.2,>=2.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.1.3)
+2023-06-15 06:57:19,049 > Requirement already satisfied: Flask-Limiter<3,>=2.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.9.2)
+2023-06-15 06:57:19,049 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (0.5.0)
+2023-06-15 06:57:19,049 > Requirement already satisfied: colorlog<7,>=6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (6.7.0)
+2023-06-15 06:57:19,049 > Requirement already satisfied: feedparser<7,>=6.0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (6.0.10)
+2023-06-15 06:57:19,050 > Requirement already satisfied: watchdog<2,>=1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.0.2)
+2023-06-15 06:57:19,050 > Requirement already satisfied: Flask-Babel<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2.0.0)
+2023-06-15 06:57:19,050 > Requirement already satisfied: regex in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (2022.10.31)
+2023-06-15 06:57:19,050 > Requirement already satisfied: argon2-cffi<22,>=21.3.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (21.3.0)
+2023-06-15 06:57:19,050 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.2.0)
+2023-06-15 06:57:19,051 > Requirement already satisfied: netaddr<0.9,>=0.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (0.8.0)
+2023-06-15 06:57:19,051 > Requirement already satisfied: Click<9,>=8.0.3 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (8.1.3)
+2023-06-15 06:57:19,051 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Octoslack==2.2.0) (1.9.6)
+2023-06-15 06:57:19,051 > Collecting python-magic
+2023-06-15 06:57:19,051 > Downloading python_magic-0.4.27-py2.py3-none-any.whl (13 kB)
+2023-06-15 06:57:19,052 > Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.8/site-packages (from argon2-cffi<22,>=21.3.0->OctoPrint->Octoslack==2.2.0) (21.2.0)
+2023-06-15 06:57:19,052 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.8->OctoPrint->Octoslack==2.2.0) (1.0.0)
+2023-06-15 06:57:19,052 > Requirement already satisfied: itsdangerous>=2.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Octoslack==2.2.0) (2.1.2)
+2023-06-15 06:57:19,052 > Requirement already satisfied: Jinja2>=3.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Octoslack==2.2.0) (3.1.2)
+2023-06-15 06:57:19,052 > Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.8/site-packages (from flask<2.2,>=2.1->OctoPrint->Octoslack==2.2.0) (6.0.0)
+2023-06-15 06:57:19,053 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->Octoslack==2.2.0) (2.0)
+2023-06-15 06:57:19,053 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<3,>=2.0->OctoPrint->Octoslack==2.2.0) (2.12.1)
+2023-06-15 06:57:19,053 > Requirement already satisfied: limits>=2.8 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (3.2.0)
+2023-06-15 06:57:19,053 > Requirement already satisfied: rich<13,>=12 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (12.6.0)
+2023-06-15 06:57:19,053 > Requirement already satisfied: typing-extensions>=4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (4.5.0)
+2023-06-15 06:57:19,054 > Requirement already satisfied: ordered-set<5,>4 in /usr/local/lib/python3.8/site-packages (from Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (4.1.0)
+2023-06-15 06:57:19,054 > Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.28.1->discord-webhook->Octoslack==2.2.0) (3.0.1)
+2023-06-15 06:57:19,054 > Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.28.1->discord-webhook->Octoslack==2.2.0) (3.4)
+2023-06-15 06:57:19,054 > Requirement already satisfied: ifaddr>=0.1.7 in /usr/local/lib/python3.8/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->Octoslack==2.2.0) (0.2.0)
+2023-06-15 06:57:19,054 > Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/site-packages (from importlib-metadata>=3.6.0->flask<2.2,>=2.1->OctoPrint->Octoslack==2.2.0) (3.15.0)
+2023-06-15 06:57:19,054 > Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.8/site-packages (from Jinja2>=3.0->flask<2.2,>=2.1->OctoPrint->Octoslack==2.2.0) (2.1.2)
+2023-06-15 06:57:19,054 > Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (57.5.0)
+2023-06-15 06:57:19,055 > Requirement already satisfied: packaging<24,>=21 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (23.0)
+2023-06-15 06:57:19,055 > Requirement already satisfied: deprecated>=1.2 in /usr/local/lib/python3.8/site-packages (from limits>=2.8->Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (1.2.13)
+2023-06-15 06:57:19,055 > Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (2.14.0)
+2023-06-15 06:57:19,055 > Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /usr/local/lib/python3.8/site-packages (from rich<13,>=12->Flask-Limiter<3,>=2.6->OctoPrint->Octoslack==2.2.0) (0.9.1)
+2023-06-15 06:57:19,055 > Requirement already satisfied: cffi>=1.0.1 in /usr/local/lib/python3.8/site-packages (from argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->Octoslack==2.2.0) (1.15.1)
+2023-06-15 06:57:19,055 > Requirement already satisfied: pycparser in /usr/local/lib/python3.8/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi<22,>=21.3.0->OctoPrint->Octoslack==2.2.0) (2.21)
+2023-06-15 06:57:19,056 > Building wheels for collected packages: Octoslack, imgurpython, pymsteams, tinys3
+2023-06-15 06:57:19,056 > Building wheel for Octoslack (setup.py): started
+2023-06-15 06:57:20,191 > Building wheel for Octoslack (setup.py): finished with status 'done'
+2023-06-15 06:57:20,191 > Created wheel for Octoslack: filename=Octoslack-2.2.0-py3-none-any.whl size=83716 sha256=590f3995dabd8d46e751de592a01763f067527e9f05293a4bdf9469adb3cd41c
+2023-06-15 06:57:20,192 > Stored in directory: /tmp/pip-ephem-wheel-cache-z04llo_k/wheels/d6/ab/4e/ce17478819d45a4b4ef4d3b2481bd20e6e7ce9d528ce8c1656
+2023-06-15 06:57:20,192 > Building wheel for imgurpython (setup.py): started
+2023-06-15 06:57:21,338 > Building wheel for imgurpython (setup.py): finished with status 'done'
+2023-06-15 06:57:21,338 > Created wheel for imgurpython: filename=imgurpython-1.1.7-py3-none-any.whl size=12570 sha256=71eff971ef6f2856d0046eb1b73e0b2f19fd3311a596c6ee44f244365c96dd78
+2023-06-15 06:57:21,339 > Stored in directory: /tmp/pip-ephem-wheel-cache-z04llo_k/wheels/f0/16/c3/f4174762f151e86a294810e6faa0f53fbfd90ceb111519633d
+2023-06-15 06:57:21,340 > Building wheel for pymsteams (setup.py): started
+2023-06-15 06:57:22,451 > Building wheel for pymsteams (setup.py): finished with status 'done'
+2023-06-15 06:57:22,451 > Created wheel for pymsteams: filename=pymsteams-0.2.2-py3-none-any.whl size=6703 sha256=bfa8ae1cabf50c0b428804ab19db85b30db6726cee6e536eadc5c57bd90d114d
+2023-06-15 06:57:22,454 > Stored in directory: /tmp/pip-ephem-wheel-cache-z04llo_k/wheels/f4/2f/be/91864d807dd6405e0890335e91964259e5fc3872d6e1bc9ada
+2023-06-15 06:57:22,454 > Building wheel for tinys3 (setup.py): started
+2023-06-15 06:57:23,897 > Building wheel for tinys3 (setup.py): finished with status 'done'
+2023-06-15 06:57:23,897 > Created wheel for tinys3: filename=tinys3-0.1.12-py3-none-any.whl size=16332 sha256=a2862fc9642e49f03f99e6618de9cf7186186ee0d1125be20d2458902850a7a0
+2023-06-15 06:57:23,897 > Stored in directory: /tmp/pip-ephem-wheel-cache-z04llo_k/wheels/2b/ad/4a/b8eba7364be61070307bd82d7b7062e799d4c95ccc0d18bdf8
+2023-06-15 06:57:23,897 > Successfully built Octoslack imgurpython pymsteams tinys3
+2023-06-15 06:57:23,897 > Installing collected packages: slack_sdk, python-magic, Pillow, pathlib2, minio, humanize, tinys3, rocket-python, pymsteams, pushover_complete, pushbullet.py, matrix_client, imgurpython, discord-webhook, Octoslack
+2023-06-15 06:57:26,647 ! WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-06-15 06:57:26,654 > Successfully installed Octoslack-2.2.0 Pillow-9.5.0 discord-webhook-1.1.0 humanize-4.6.0 imgurpython-1.1.7 matrix_client-0.4.0 minio-7.1.15 pathlib2-2.3.7.post1 pushbullet.py-0.12.0 pushover_complete-1.1.1 pymsteams-0.2.2 python-magic-0.4.27 rocket-python-1.3.3 slack_sdk-3.21.3 tinys3-0.1.12

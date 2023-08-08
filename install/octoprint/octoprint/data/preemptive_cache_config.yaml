@@ -1,0 +1,6 @@
+/:
+- _count: 1
+  _timestamp: 1691385458.1136801
+  base_url: http://192.168.1.190/
+  path: /
+  query_string: l10n=en

@@ -56,11 +56,19 @@
       hostname:
         name: miniprintbox.local
 
-    - name: Execute rebuild-obico.sh script
-      shell: bash /root/allprint/rebuild-obico.sh
 
-    - name: Execute rebuildhomer script
-      shell: bash /root/allprint/homerstart.sh
+
+
+
+
+    - name: Build Obico
+      shell: bash obico-server/rebuild-obico.sh
+
+    - name: Build Homer Dashboard
+      shell: bash homer/homerstart.sh
+
+    - name: Build Octoprint
+      shell: bash octoprint/rebuild-octoprint
 
     - name: Check curl localhost:3334
       uri:

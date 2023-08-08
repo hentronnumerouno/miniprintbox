@@ -1,0 +1,8 @@
+[Unit]
+Description=Script to Start All Print Programs
+
+[Service]
+ExecStart=bash /root/allprint/printstart.sh
+
+[Install]
+WantedBy=multi-user.target

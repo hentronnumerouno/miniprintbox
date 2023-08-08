@@ -3,6 +3,8 @@ theme:
   features:
     - navigation.tracking
     - content.code.copy
+    - navigation.footer
+
   icon:
     admonition:
       note: octicons/tag-16
@@ -63,3 +65,5 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+
+copyright: Made by Humans in the USA

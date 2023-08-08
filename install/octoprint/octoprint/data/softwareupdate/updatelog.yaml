@@ -1,0 +1,48 @@
+- current_version: 1.9.0
+  datetime: '2023-07-16 23:00:33'
+  display_name: OctoPrint
+  release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.9.1
+  success: true
+  target: octoprint
+  target_version: 1.9.1
+  text: Update successful
+- current_version: 2.3.9
+  datetime: '2023-07-16 23:00:55'
+  display_name: Obico for OctoPrint
+  release_notes: https://github.com/TheSpaghettiDetective/OctoPrint-Obico/releases/tag/2.4.1
+  success: true
+  target: obico
+  target_version: 2.4.1
+  text: Update successful
+- current_version: 1.9.1
+  datetime: '2023-08-07 05:18:29'
+  display_name: OctoPrint
+  release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.9.2
+  success: true
+  target: octoprint
+  target_version: 1.9.2
+  text: Update successful
+- current_version: 2.3.0
+  datetime: '2023-08-07 05:18:42'
+  display_name: Print Time Genius Plugin
+  release_notes: https://github.com/eyal0/OctoPrint-PrintTimeGenius/releases/tag/2.3.1
+  success: true
+  target: PrintTimeGenius
+  target_version: 2.3.1
+  text: Update successful
+- current_version: 1.19.9
+  datetime: '2023-08-07 05:18:52'
+  display_name: Dashboard Plugin
+  release_notes: https://github.com/j7126/OctoPrint-Dashboard/releases/tag/1.19.10
+  success: true
+  target: dashboard
+  target_version: 1.19.10
+  text: Update successful
+- current_version: 2.4.1
+  datetime: '2023-08-07 05:19:13'
+  display_name: Obico for OctoPrint
+  release_notes: https://github.com/TheSpaghettiDetective/OctoPrint-Obico/releases/tag/2.4.3
+  success: true
+  target: obico
+  target_version: 2.4.3
+  text: Update successful

@@ -1,0 +1,3 @@
+[octoprint.plugin]
+pi_support = octoprint_pi_support
+

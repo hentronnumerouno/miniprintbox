@@ -62,6 +62,10 @@
         state: started
         enabled: yes
 
+
+    - name: Git Clone
+      shell: git clone -b dev https://github.com/hentronnumerouno/miniprintbox.git
+
     - name: Build Obico
       shell: bash obico-server/rebuild-obico.sh
 

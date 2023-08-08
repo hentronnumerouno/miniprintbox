@@ -10,8 +10,8 @@ plugins:
     _config_version: 2
     connection_method: ROCKETCHAT
     discord_config:
-      alternate_username: Frank's 3D Print Updates
-      webhook_urls: https://discord.com/api/webhooks/1101092273640452109/CL0BtdcOytwWreO2y1mbZW-RCEnkLKKLbNaWVGJ6SfdLxDoGpdXB3-9OUwvGzMwWAZ7f
+      alternate_username: Miniprintbox Updates
+      webhook_urls: https://discord.com/api/webhooks/test
     gcode_events: '[]'
     rocketchat_config:
       channel: Prints_In_Orbit

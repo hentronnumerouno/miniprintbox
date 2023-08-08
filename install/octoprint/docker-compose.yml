@@ -36,7 +36,7 @@ services:
   #    - GUID=0
   #    - TZ=America/Los_Angeles
     volumes:
-     - ~/allprint/octoprint:/octoprint
+     - ./octoprint:/octoprint
 
 volumes:
   octoprint:

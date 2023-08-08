@@ -56,10 +56,11 @@
       hostname:
         name: miniprintbox.local
 
-
-
-
-
+    - name: Install and start Avahi daemon
+      service:
+        name: avahi-daemon
+        state: started
+        enabled: yes
 
     - name: Build Obico
       shell: bash obico-server/rebuild-obico.sh
@@ -81,17 +82,3 @@
         url: http://localhost:80
       register: curl_80
       ignore_errors: true
-
-    - name: Execute /root/allprint/systemd/servicecopy.sh script
-      shell: bash /root/allprint/systemd/servicecopy.sh
-
-    - name: Install and start Avahi daemon
-      service:
-        name: avahi-daemon
-        state: started
-        enabled: yes
-
-
-
-    - name: Execute rebuild-octoprint.sh script
-      shell: bash /root/allprint/rebuild-octoprint.sh

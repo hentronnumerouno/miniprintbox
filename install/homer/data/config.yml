@@ -53,7 +53,7 @@ message:
 links:
   - name: "Project Page"
     icon: "fas fa-server"
-    url: "https://miniprintbox.com"
+    url: "https://docs.miniprintbox.com"
     target: "_blank" # optional html a tag target attribute
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:

@@ -18,8 +18,8 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   language: en
-  logo: mbd9.png
-  favicon: mbd9.png
+  logo: mpb2.svg
+  favicon: mpb2.svg
   name: material
   palette: 
     # Palette toggle for dark mode

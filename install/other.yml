@@ -1,0 +1,62 @@
+    - name: Install required packages for apt-key
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - gnupg
+        - gnupg2
+        - gnupg1
+    - name: Update and upgrade packages
+      become: true
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      loop:
+        - curl
+        - ssh
+        - docker.io
+        - docker-compose
+        - avahi-daemon
+        - avahi-utils
+        - bmon
+        - iftop
+        - git
+        - python3-pip
+        
+
+    # Rest of your tasks...
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+    - name: Remove brltty package
+      apt:
+        name: brltty
+        state: absent
+
+    - name: Download and execute netdata kickstart script
+      shell: |
+        wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --stable-channel --disable-telemetry
+      args:
+        executable: /bin/bash
+        creates: /tmp/netdata-kickstart.sh
+    
+    - name: Set hostname to miniprintbox.local
+      hostname:
+        name: miniprintbox.local
+
+    - name: Install and start Avahi daemon
+      service:
+        name: avahi-daemon
+        state: started
+        enabled: yes
+
+
+    - name: Git Clone
+      shell: rm -rf /root/miniprintbox && git clone -b dev https://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@github.com/hentronnumerouno/miniprintbox.git

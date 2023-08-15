@@ -62,7 +62,7 @@
         state: started
         enabled: yes
 
-    - name: Get a list of container IDs
+    - name: Delete containers
       command: docker ps -aq
       register: container_ids
 

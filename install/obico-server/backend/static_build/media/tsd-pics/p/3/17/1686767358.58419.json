@@ -1,0 +1,1 @@
+[{"model": "app.printerprediction", "pk": 3, "fields": {"current_frame_num": 25, "lifetime_frame_num": 1333, "current_p": 0, "ewm_mean": 0.051796596087040556, "rolling_mean_long": 0.03394496151577049, "rolling_mean_short": 0.18274938744994307, "created_at": "2023-01-01T12:18:09.845Z", "updated_at": "2023-06-14T18:29:32.787Z"}}]

@@ -91,18 +91,12 @@
         chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
 
 
-    - name: Wait for 5 seconds
-      pause:
-        seconds: 5
-        
-    - name: Check curl localhost:80
-      uri:
-        url: http://localhost:80
-      register: curl_80
-      ignore_errors: true
-
-    - name: Check curl localhost:3334
-      uri:
-        url: http://localhost:3334
-      register: curl_3334
-      ignore_errors: true
+    - name: UptimeCheck
+      wait_for:
+        host: localhost
+        port: "{{ item }}"
+        delay: 2
+        timeout: 300  # Adjust this timeout as needed
+      loop:
+        - 80
+        - 3334

@@ -23,8 +23,8 @@ extruder:
 heatedBed: true
 heatedChamber: false
 id: _default
-model: Ender Tree
-name: Ender Tree
+model: Ender
+name: Ender
 volume:
   custom_box: false
   depth: 220.0

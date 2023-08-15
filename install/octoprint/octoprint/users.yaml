@@ -5,7 +5,7 @@ admin:
   groups:
   - users
   - admins
-  password: $argon2id$v=19$m=65536,t=3,p=4$Z8y5lzKGEOKcM0boXav1vg$hm6S+cVZairkCIeiUKgVMmGREipUt15G/dSlwaT25xk
+  password: $argon2id$v=19$m=65536,t=3,p=4$zFlL6T0HgPAe4zznPCektA$5uQ7nCE5DY1xJJqUO1c74yGZSbTrzNHj89Z4F9gXHrI
   permissions: []
   roles:
   - user

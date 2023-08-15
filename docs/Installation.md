@@ -18,4 +18,5 @@ Begin Installation:
 cd install
 ./install.sh
 ```
-
+Once the installation is completed, the script will display the overview of the tasks, including the time it took to complete.
+[![Ansible Timer](images/ansible_time.png)](images/ansible_time.png)

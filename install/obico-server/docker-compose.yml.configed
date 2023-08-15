@@ -1,0 +1,71 @@
+version: '2.4'
+
+x-web-defaults: &web-defaults
+  restart: unless-stopped
+  build:
+    context: backend
+    dockerfile: "Dockerfile${DOCKERFILE_VERSION-}"
+  volumes:
+    - ./backend:/app
+    - ./frontend:/frontend
+  depends_on:
+    - redis
+  environment:
+    OCTOPRINT_TUNNEL_PORT_RANGE: '2000-3000'
+    EMAIL_HOST: 'mail.henryshosting.com'
+    EMAIL_HOST_USER: 'otisprint@henryshosting.com'
+    EMAIL_HOST_PASSWORD: 'antiviral-viewer-footer'
+    EMAIL_PORT: '587'
+    EMAIL_USE_TLS: '${EMAIL_USE_TLS-True}'
+    DEFAULT_FROM_EMAIL: 'otisprint@henryshosting.com'
+    DEBUG: '${DEBUG-False}'    # Don't set DEBUG to True unless you know what you are doing. Otherwise the static files will be cached in browser until hard-refresh
+    ADMIN_IP_WHITELIST: '${ADMIN_IP_WHITELIST-}'
+    SITE_USES_HTTPS: '${SITE_USES_HTTPS-False}'
+    SITE_IS_PUBLIC: '${SITE_IS_PUBLIC-True}'
+    SOCIAL_LOGIN: '${SOCIAL_LOGIN-False}'
+    REDIS_URL: '${REDIS_URL-redis://redis:6379}'
+    DATABASE_URL: '${DATABASE_URL-sqlite:////app/db.sqlite3}'
+    INTERNAL_MEDIA_HOST: '${INTERNAL_MEDIA_HOST-http://otisprint.local:3334}'
+    ML_API_HOST: '${ML_API_HOST-http://ml_api:3333}'
+    ACCOUNT_ALLOW_SIGN_UP: '${ACCOUNT_ALLOW_SIGN_UP-False}'
+    WEBPACK_LOADER_ENABLED: '${WEBPACK_LOADER_ENABLED-False}'
+    TELEGRAM_BOT_TOKEN: '${TELEGRAM_BOT_TOKEN-}'
+    TWILIO_ACCOUNT_SID: '${TWILIO_ACCOUNT_SID-}'
+    TWILIO_AUTH_TOKEN: '${TWILIO_AUTH_TOKEN-}'
+    TWILIO_FROM_NUMBER: '${TWILIO_FROM_NUMBER-}'
+    SENTRY_DSN: '${SENTRY_DSN-}'
+    PUSHOVER_APP_TOKEN: '${PUSHOVER_APP_TOKEN-}'
+    SLACK_CLIENT_ID: '${SLACK_CLIENT_ID-}'
+    SLACK_CLIENT_SECRET: '${SLACK_CLIENT_SECRET-}'
+    VERSION:
+
+services:
+  ml_api:
+    hostname: ml_api
+    restart: unless-stopped
+    build:
+      context: ml_api
+    environment:
+        DEBUG: 'True'
+        FLASK_APP: 'server.py'
+        #ML_API_TOKEN:
+        #HAS_GPU: 'False'
+    command: bash -c "gunicorn --bind 0.0.0.0:3333 --workers 1 wsgi"
+
+  web:
+    <<: *web-defaults
+    hostname: web
+    ports:
+      - "3334:3334"
+    depends_on:
+      - ml_api
+    command: sh -c 'python manage.py migrate && python manage.py collectstatic -v 2 --noinput && python manage.py runserver --nostatic --noreload 0.0.0.0:3334'
+
+  tasks:
+    <<: *web-defaults
+    hostname: tasks
+    command: sh -c "celery -A config worker --beat -l info -c 2 -Q realtime,celery"
+
+  redis:
+    restart: unless-stopped
+    image: redis:5.0-alpine

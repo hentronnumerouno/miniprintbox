@@ -62,18 +62,33 @@
         state: started
         enabled: yes
 
+    - name: Get a list of container IDs
+      command: docker ps -aq
+      register: container_ids
+
+    - name: Remove containers
+      docker_container:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ container_ids.stdout_lines }}"
 
     - name: Git Clone
-      shell: git clone -b dev https://github.com/hentronnumerouno/miniprintbox.git
+      shell: rm -rf /root/miniprintbox && git clone -b dev https://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@github.com/hentronnumerouno/miniprintbox.git
+
+    - name: Build Homer
+      ansible.builtin.command: bash homer/homerstart.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
 
     - name: Build Obico
-      shell: bash obico-server/rebuild-obico.sh
-
-    - name: Build Homer Dashboard
-      shell: bash homer/homerstart.sh
+      ansible.builtin.command: bash obico-server/rebuild-obico.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
 
     - name: Build Octoprint
-      shell: bash octoprint/rebuild-octoprint
+      ansible.builtin.command: bash octoprint/rebuild-octoprint.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
 
     - name: Check curl localhost:3334
       uri:

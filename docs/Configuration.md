@@ -1,5 +1,3 @@
-### Configuration
-
 Once the Ansible script has completed, the Homer Dashboard will serve the information for each service.
 
 ##### Octoprint Login Credentials:
@@ -13,3 +11,4 @@ Once the Ansible script has completed, the Homer Dashboard will serve the inform
 
 Homer Dashboard Preview:
 [![Homer Dashboard](images/homer.png)](images/homer.png)
+

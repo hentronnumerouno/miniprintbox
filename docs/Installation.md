@@ -1,5 +1,3 @@
-## Installation
-
 Tested on Ubuntu 22.04, other versions may work as well.
 
 !!! warning

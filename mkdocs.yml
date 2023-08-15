@@ -65,5 +65,10 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+nav:
+  - Pages:
+    - Introduction: index.md
+    - Installation: Installation.md
+    - Configuration: Configuration.md
 
 copyright: Made by Humans in the USA

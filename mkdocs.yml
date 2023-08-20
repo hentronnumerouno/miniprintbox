@@ -70,5 +70,6 @@ nav:
     - Introduction: index.md
     - Installation: Installation.md
     - Configuration: Configuration.md
+    - Uninstallation: Uninstallation.md
 
 copyright: Made by Humans in the USA

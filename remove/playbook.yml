@@ -9,8 +9,27 @@
         name: avahi-daemon
         state: stopped
         enabled: no
+    
+    # Remove containers
+    - name: Remove containers
+      docker_container:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ container_ids.stdout_lines }}"
+      when: container_ids is defined and container_ids.stdout_lines | length > 0
 
+    # Remove Docker images
+    - name: Remove all Docker images
+      command: docker rmi -f $(docker images -q)
+      ignore_errors: yes  # Ignore errors if there are no images to remove
 
+    - name: Remove docker /etc/
+      shell: rm -rf /etc/docker
+    
+    - name: Remove docker /var/lib
+      shell: rm -rf /var/lib/docker
+
+    #stop and remove docker
     - name: Stop and remove docker
       service:
         name: docker
@@ -38,13 +57,7 @@
         - python3-pip
         - brltty  # Remove the brltty package
 
-    # Remove containers
-    - name: Remove containers
-      docker_container:
-        name: "{{ item }}"
-        state: absent
-      loop: "{{ container_ids.stdout_lines }}"
-      when: container_ids is defined and container_ids.stdout_lines | length > 0
+
 
     # Remove cloned repositories
     - name: Remove cloned repositories

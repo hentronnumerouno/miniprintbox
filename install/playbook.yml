@@ -62,6 +62,12 @@
         state: started
         enabled: yes
 
+    - name: Install and start docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
     - name: Delete containers
       command: docker ps -aq
       register: container_ids

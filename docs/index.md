@@ -31,7 +31,7 @@ Obico Supported Natively:
     - Pushover
     - Slack
 
-### Optional Features for Remote Access (Not Yet Integrated into Script) :material-vpn:
+### Optional Features for Remote Access (Future Features) :material-vpn:
 - Twingate
 - Cloudflare Tunnels
 - Netmaker

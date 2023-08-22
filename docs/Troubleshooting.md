@@ -2,7 +2,7 @@
 Please note that these are the failures modes discovered during testing and are by no means exclusive to the failures that may arise during use. Please open a pull request with the issues and issue description so it can be added to the troubleshooting documentation. https://github.com/hentronnumerouno/miniprintbox/pulls
 ### Failure Modes:
 
-#### No Image in Octoprint or Obico?
+#### No image in Octoprint or Obico?
 - Cause 1:
     - Not all browsers support Avahi for network resolution of .local domains
 - Fix 1:

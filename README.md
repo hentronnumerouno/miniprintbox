@@ -1,18 +1,41 @@
+All-in-one solution for monitoring 3d prints on a budget. Leverage the power of Obico for print monitoring and Octoprint for printer control in a self-hosted environment. Designed to be deployed on low-cost thin-clients that can often be found used for <$50.
 
-## Introduction
+## Features :material-printer-3d-nozzle:
+- [Obico](https://www.obico.io/)
+    - Print monitoring and failure detection.
+- [Octoprint](https://octoprint.org/)
+    - Printer control and integration with Obico.
+- [Netdata](https://www.netdata.cloud/)
+    - System Monitoring Software
+- [Homer](https://github.com/bastienwirtz/homer)
+    - Dashboard for all of the apps!
 
-All-in-one solution for monitoring 3d prints on a budget. Leverage the power of Obico for print monitoring and Octoprint for printer control in a self-hosted environment. Designed to be deployed on low-cost thin-clients that can often be found on used for <$50.
+### Notification Support :rocket:
+Octoprint Supported via [Octoslack](https://plugins.octoprint.org/plugins/Octoslack/)
 
-## Features
-### Default
-- Obico
-- Octoprint
-- Netdata
-- Homer
+    - Slack
+    - Pushbullet
+    - Pushover
+    - Rocket.Chat
+    - Matrix
+    - Discord
+    - Microsoft Teams
 
-### Notification Support
-- Rocketchat
-- Discord
+Obico Supported Natively:
 
-### Optional Features for Remote Access
+    - Email
+    - SMS
+    - Pushbullet
+    - Discord
+    - Telegram
+    - Pushover
+    - Slack
+
+### Optional Features for Remote Access (Future Features) :material-vpn:
 - Twingate
+- Cloudflare Tunnels
+- Netmaker
+
+### Future Features:
+- Daily backup and restore functionality
+- Container management gui

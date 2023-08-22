@@ -1,6 +1,6 @@
 All-in-one solution for monitoring 3d prints on a budget. Leverage the power of Obico for print monitoring and Octoprint for printer control in a self-hosted environment. Designed to be deployed on low-cost thin-clients that can often be found used for <$50.
 
-## Features :material-printer-3d-nozzle:
+## Features:
 - [Obico](https://www.obico.io/)
     - Print monitoring and failure detection.
 - [Octoprint](https://octoprint.org/)
@@ -31,7 +31,7 @@ Obico Supported Natively:
     - Pushover
     - Slack
 
-### Optional Features for Remote Access (Future Features) :material-vpn:
+### Optional Features for Remote Access (Future Features)
 - Twingate
 - Cloudflare Tunnels
 - Netmaker

@@ -1,0 +1,871 @@
+2023-08-07 05:11:53,044 - octoprint.startup - INFO - ******************************************************************************
+2023-08-07 05:11:53,046 - octoprint.startup - INFO - Starting OctoPrint 1.9.1
+2023-08-07 05:11:53,047 - octoprint.startup - INFO - ******************************************************************************
+2023-08-07 05:11:53,865 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2023-08-07 05:11:53,887 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: online
+2023-08-07 05:11:53,887 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 1.1.1.1:53 is working
+2023-08-07 05:11:53,887 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is working
+2023-08-07 05:11:54,570 - octoprint.startup - INFO - Blacklist processing done, adding 3 blacklisted plugin versions: roomtemp (any), GcodeEditor (>=0.1.1,<=0.2.8), gcodeleveling (>=0.1.0,<=0.1.1)
+2023-08-07 05:11:54,582 - octoprint.plugin.core - INFO - Loading plugins from /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins, /octoprint/octoprint/plugins and installed plugin packages...
+2023-08-07 05:11:59,015 - octoprint.plugin.core - INFO - Plugin Pi Support Plugin (2023.5.24) did not pass check, not loading.
+2023-08-07 05:11:59,406 - octoprint.startup - INFO - Added settings overlay from plugin dashboard
+2023-08-07 05:11:59,421 - octoprint.plugin.core - INFO - Found 24 plugin(s) providing 24 mixin implementations, 62 hook handlers
+2023-08-07 05:11:59,456 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2023-08-07 05:11:59,661 - octoprint.server - INFO - Intermediary server started
+2023-08-07 05:11:59,685 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /octoprint/octoprint/uploads...
+2023-08-07 05:11:59,743 - octoprint.filemanager.storage - INFO - ... file metadata for /octoprint/octoprint/uploads initialized successfully.
+2023-08-07 05:11:59,748 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: "Need(method='role', value='plugin_action_command_notification_show')")
+2023-08-07 05:11:59,749 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: "Need(method='role', value='plugin_action_command_notification_clear')")
+2023-08-07 05:11:59,750 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: "Need(method='role', value='plugin_action_command_prompt_interact')")
+2023-08-07 05:11:59,750 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: "Need(method='role', value='plugin_announcements_read')")
+2023-08-07 05:11:59,750 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: "Need(method='role', value='plugin_announcements_read'), Need(method='role', value='plugin_announcements_manage')")
+2023-08-07 05:11:59,751 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: "Need(method='role', value='plugin_appkeys_admin')")
+2023-08-07 05:11:59,751 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_GRANT (needs: "Need(method='role', value='plugin_appkeys_user')")
+2023-08-07 05:11:59,752 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: "Need(method='role', value='plugin_backup_access')")
+2023-08-07 05:11:59,752 - octoprint.server - INFO - Added new permission from plugin dashboard: PLUGIN_DASHBOARD_ADMIN (needs: "Need(method='role', value='plugin_dashboard_admin')")
+2023-08-07 05:11:59,752 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: "Need(method='role', value='plugin_firmware_check_display')")
+2023-08-07 05:11:59,753 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: "Need(method='role', value='plugin_logging_manage')")
+2023-08-07 05:11:59,754 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_LIST (needs: "Need(method='role', value='plugin_pluginmanager_list')")
+2023-08-07 05:11:59,764 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: "Need(method='role', value='plugin_pluginmanager_manage')")
+2023-08-07 05:11:59,764 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: "Need(method='role', value='plugin_pluginmanager_install'), Need(method='role', value='plugin_pluginmanager_manage')")
+2023-08-07 05:11:59,765 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: "Need(method='role', value='plugin_softwareupdate_check')")
+2023-08-07 05:11:59,765 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: "Need(method='role', value='plugin_softwareupdate_update')")
+2023-08-07 05:11:59,765 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CONFIGURE (needs: "Need(method='role', value='plugin_softwareupdate_configure')")
+2023-08-07 05:11:59,782 - octoprint.printer.standard - INFO - Using print time estimator provided by PrintTimeGenius
+2023-08-07 05:11:59,845 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2023-08-07 05:11:59,849 - octoprint.plugins.softwareupdate - INFO - Loaded update log from disk
+2023-08-07 05:12:02,520 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:12:03,982 - octoprint.util.pip - INFO - Version of pip is 22.0.4
+2023-08-07 05:12:03,996 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:12:03,997 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:12:04,138 - octoprint.plugin.core - INFO - Initialized 24 plugin implementation(s)
+2023-08-07 05:12:04,173 - octoprint.plugins.Octoslack - INFO - Attempting to detect vcgencmd path for querying RasberryPi temperature information
+2023-08-07 05:12:04,173 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /opt/vc/bin/vcgencmd
+2023-08-07 05:12:04,176 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /usr/bin/vcgencmd
+2023-08-07 05:12:04,177 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /bin/vcgencmd
+2023-08-07 05:12:04,179 - octoprint.plugins.Octoslack - WARNING - Attempting to detect vcgencmd path for querying RasberryPi temperature information
+2023-08-07 05:12:04,472 - octoprint.plugins.uicustomizer - INFO - Downloaded theme: https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/darkgreen.css into: /octoprint/plugins/lib/python3.8/site-packages/octoprint_uicustomizer/static/themes/css/darkgreen.css
+2023-08-07 05:12:04,821 - octoprint - INFO - Installing webcam compat overlay for configured default webcam <octoprint.webcams.ProvidedWebcam object at 0x7fd1745cb400>
+2023-08-07 05:12:04,823 - octoprint.plugin.core - INFO - 24 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/backup
+|  Bed Visualizer (1.1.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_bedlevelvisualizer
+|  Classic Webcam (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/classicwebcam
+|  Core Wizard (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/corewizard
+|  Dashboard (1.19.9) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_dashboard
+|  Discovery (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/errortracking
+|  Event Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/eventmanager
+|  File Check (2021.2.23) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_file_check
+|  Firmware Check (2021.10.11) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/logging
+|  Obico for OctoPrint (2.4.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_obico
+|  Octoslack (2.2.0) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_Octoslack
+|  Plugin Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/pluginmanager
+|  PrintTimeGenius Plugin (2.3.0) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_PrintTimeGenius
+|  Software Update (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/softwareupdate
+|  UI Customizer (0.1.9.4) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_uicustomizer
+|  Virtual Printer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2023-08-07 05:12:04,833 - octoprint.environment - INFO - Detected environment is Python 3.8.16 under Linux (linux). Details:
+|  hardware:
+|    cores: 4
+|    freq: 2640.0
+|    ram: 4009541632
+|  os:
+|    bits: 64
+|    id: linux
+|    platform: linux
+|  python:
+|    pip: 22.0.4
+|    version: 3.8.16
+2023-08-07 05:12:04,850 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/webassets...
+2023-08-07 05:12:04,851 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/.webassets-cache...
+2023-08-07 05:12:04,852 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/.webassets-manifest.json...
+2023-08-07 05:12:05,132 - octoprint.plugins.bedlevelvisualizer - WARNING - The Blueprint of this plugin is relying on the default implementation of is_blueprint_csrf_protected (newly added in OctoPrint 1.8.3), which in a future version will be switched from False to True for security reasons. Plugin authors should ensure they explicitly declare the CSRF protection status in their BlueprintPlugin mixin implementation. Recommendation is to enable CSRF protection and exempt views that must not use it with the octoprint.plugin.BlueprintPlugin.csrf_exempt decorator.
+2023-08-07 05:12:05,133 - octoprint.server - WARNING - CSRF Protection for Blueprint of plugin bedlevelvisualizer is DISABLED
+2023-08-07 05:12:05,136 - octoprint.plugins.obico - WARNING - The Blueprint of this plugin is relying on the default implementation of is_blueprint_csrf_protected (newly added in OctoPrint 1.8.3), which in a future version will be switched from False to True for security reasons. Plugin authors should ensure they explicitly declare the CSRF protection status in their BlueprintPlugin mixin implementation. Recommendation is to enable CSRF protection and exempt views that must not use it with the octoprint.plugin.BlueprintPlugin.csrf_exempt decorator.
+2023-08-07 05:12:05,137 - octoprint.server - WARNING - CSRF Protection for Blueprint of plugin obico is DISABLED
+2023-08-07 05:12:05,577 - octoprint.settings - WARNING - DeprecationWarning: Detected access to deprecated settings path ['webcam', 'snapshot'], returned value is derived from compatibility overlay. Please use the webcam system introduced with 1.9.0, this compatibility layer will be removed in a future release.
+2023-08-07 05:12:05,600 - octoprint.server - INFO - Shutting down intermediary server...
+2023-08-07 05:12:05,608 - octoprint.server - INFO - Intermediary server shut down
+2023-08-07 05:12:05,612 - octoprint.events - INFO - Processing startup event, this is our first event
+2023-08-07 05:12:05,613 - octoprint.events - INFO - Adding 1 events to queue that were held back before startup event
+2023-08-07 05:12:05,626 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2023-08-07 05:12:05,629 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2023-08-07 05:12:05,652 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2023-08-07 05:12:05,685 - octoprint.server - INFO - Trying to connect to configured serial port None
+2023-08-07 05:12:05,718 - octoprint.plugins.softwareupdate - INFO - Fetching check overlays from https://plugins.octoprint.org/update_check_overlay.json
+2023-08-07 05:12:06,016 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2023-08-07 05:12:06,028 - octoprint.server - INFO - Starting autorefresh of serial port list
+2023-08-07 05:12:06,034 - octoprint.server - INFO - Autorefresh of serial port list stopped
+2023-08-07 05:12:06,046 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 7 port/baudrate candidates: /dev/ttyUSB0@115200, /dev/ttyUSB0@250000, /dev/ttyUSB0@230400, /dev/ttyUSB0@57600, /dev/ttyUSB0@38400, /dev/ttyUSB0@19200, /dev/ttyUSB0@9600
+2023-08-07 05:12:06,054 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyUSB0, baudrate 115200
+2023-08-07 05:12:06,056 - octoprint.util.comm - INFO - Connecting to port /dev/ttyUSB0, baudrate 115200
+2023-08-07 05:12:06,058 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2023-08-07 05:12:06,068 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2023-08-07 05:12:06,153 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2023-08-07 05:12:06,161 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2023-08-07 05:12:06,386 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2023-08-07 05:12:06,483 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2023-08-07 05:12:06,536 - octoprint.plugins.announcements - INFO - Loaded channel _important from https://octoprint.org/feeds/important.xml in 0.55s
+2023-08-07 05:12:06,871 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from https://plugins.octoprint.org/plugins.json
+2023-08-07 05:12:06,944 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Kamalian Print"._http._tcp.local.' for _http._tcp.local.
+2023-08-07 05:12:07,818 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Kamalian Print"._octoprint._tcp.local.' for _octoprint._tcp.local.
+2023-08-07 05:12:07,852 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance "Kamalian Print" for SSDP
+2023-08-07 05:12:07,902 - octoprint.server - INFO - Listening on http://0.0.0.0:5000
+2023-08-07 05:12:08,034 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2023-08-07 05:12:09,606 - octoprint.util.comm - INFO - Printer reports firmware name "Marlin Creality 3D"
+2023-08-07 05:12:09,622 - octoprint.util.comm - INFO - Firmware states that it supports temperature autoreporting
+2023-08-07 05:12:09,725 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:12:09,726 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:12:09,726 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:12:09,984 - octoprint.plugins.pluginmanager - INFO - Loaded plugin notices data from https://plugins.octoprint.org/notices.json
+2023-08-07 05:12:10,591 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2023-08-07 05:12:10,616 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:12:10,617 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:12:10,617 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:12:10,625 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 195.8GB. That is considered sufficient for updating.
+2023-08-07 05:12:10,989 - octoprint.plugins.bedlevelvisualizer - INFO - OctoPrint-BedLevelVisualizer loaded!
+2023-08-07 05:12:10,989 - octoprint.plugins.dashboard - INFO - Dashboard started
+2023-08-07 05:12:11,003 - octoprint.JsFrontendErrors(Dash) - INFO - Js Logger (Dash) started
+2023-08-07 05:12:11,029 - octoprint.plugins.uicustomizer - INFO - UI Customizer is initialized.
+2023-08-07 05:12:11,102 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-08-07 05:12:11,103 - backoff - INFO - Backing off wait_for_auth_token(...) for 1.0s (None)
+2023-08-07 05:12:11,211 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2023-08-07 05:12:12,103 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:12,103 - backoff - INFO - Backing off wait_for_auth_token(...) for 0.3s (None)
+2023-08-07 05:12:12,418 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:12,418 - backoff - INFO - Backing off wait_for_auth_token(...) for 2.1s (None)
+2023-08-07 05:12:14,483 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:14,484 - backoff - INFO - Backing off wait_for_auth_token(...) for 6.6s (None)
+2023-08-07 05:12:21,078 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:21,078 - backoff - INFO - Backing off wait_for_auth_token(...) for 3.5s (None)
+2023-08-07 05:12:24,621 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:24,622 - backoff - INFO - Backing off wait_for_auth_token(...) for 27.8s (None)
+2023-08-07 05:12:52,454 - octoprint.plugins.obico - ERROR - GET: http://miniprintbox.local:3334/api/v1/octo/printer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/octoprint/plugins/lib/python3.8/site-packages/octoprint_obico/utils.py", line 300, in server_request
+    resp = requests.request(method, endpoint, timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-08-07 05:12:52,455 - backoff - INFO - Backing off wait_for_auth_token(...) for 45.7s (None)
+2023-08-07 05:13:38,968 - octoprint.plugins.obico - INFO - Linked printer: {'is_pro': True, 'id': 3, 'name': 'Ender Tree'}
+2023-08-07 05:13:39,041 - octoprint.plugins.obico - INFO - Starting webcam streamer
+2023-08-07 05:13:39,169 - octoprint.plugins.obico - WARNING - Janus setup failed. Skipping Janus connection. Error: 
+b"dpkg-query: package 'janus' is not installed\nUse dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+2023-08-07 05:13:40,049 - backoff - INFO - Backing off wait_for_janus(...) for 0.7s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:13:41,777 - backoff - INFO - Backing off wait_for_janus(...) for 1.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:13:44,179 - backoff - INFO - Backing off wait_for_janus(...) for 1.5s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:13:46,733 - backoff - INFO - Backing off wait_for_janus(...) for 1.6s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:13:49,314 - backoff - INFO - Backing off wait_for_janus(...) for 10.9s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:14:01,208 - backoff - INFO - Backing off wait_for_janus(...) for 13.2s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:14:15,382 - backoff - INFO - Backing off wait_for_janus(...) for 29.6s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:14:46,003 - backoff - INFO - Backing off wait_for_janus(...) for 114.7s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:16:41,784 - backoff - INFO - Backing off wait_for_janus(...) for 162.3s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:17:02,016 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-07 05:17:24,088 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-07 05:17:36,540 - octoprint.access.users - INFO - Logged in user: admin
+2023-08-07 05:17:36,541 - octoprint.server.api - INFO - Actively logging in user admin from 192.168.1.117
+2023-08-07 05:17:37,777 - octoprint.server.util.flask - INFO - Passively logging in user admin from 192.168.1.117
+2023-08-07 05:17:37,778 - octoprint.access.users - INFO - Logged in user: admin
+2023-08-07 05:17:38,113 - octoprint.server.util.flask.PreemptiveCache - INFO - Adding entry for / and {'path': '/', 'base_url': 'http://192.168.1.190/', 'query_string': 'l10n=en', '_timestamp': 1691385458.1136801, '_count': 1}
+2023-08-07 05:17:45,015 - octoprint.server.util.sockjs - INFO - Client connection closed: 192.168.1.117
+2023-08-07 05:17:47,066 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-07 05:17:47,117 - octoprint.server.util.flask - INFO - Passively logging in user admin from 192.168.1.117
+2023-08-07 05:17:47,123 - octoprint.access.users - INFO - Logged in user: admin
+2023-08-07 05:17:49,678 - octoprint.server.util.sockjs - INFO - User admin logged in on the socket from client 192.168.1.117
+2023-08-07 05:17:56,893 - octoprint.plugins.softwareupdate - INFO - Starting update of octoprint to 1.9.2...
+2023-08-07 05:18:29,078 - octoprint.plugins.softwareupdate - INFO - Update of octoprint to 1.9.2 successful!
+2023-08-07 05:18:29,154 - octoprint.plugins.softwareupdate - INFO - Starting update of PrintTimeGenius to 2.3.1...
+2023-08-07 05:18:42,764 - octoprint.plugins.softwareupdate - INFO - Update of PrintTimeGenius to 2.3.1 successful!
+2023-08-07 05:18:42,853 - octoprint.plugins.softwareupdate - INFO - Starting update of dashboard to 1.19.10...
+2023-08-07 05:18:52,338 - octoprint.plugins.softwareupdate - INFO - Update of dashboard to 1.19.10 successful!
+2023-08-07 05:18:52,439 - octoprint.plugins.softwareupdate - INFO - Starting update of obico to 2.4.3...
+2023-08-07 05:19:13,720 - octoprint.plugins.softwareupdate - INFO - Update of obico to 2.4.3 successful!
+2023-08-07 05:19:13,881 - octoprint.plugins.softwareupdate - INFO - Saved update log to disk
+2023-08-07 05:19:13,890 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2023-08-07 05:19:13,897 - octoprint.plugins.softwareupdate - INFO - Restarting...
+2023-08-07 05:19:13,921 - octoprint.server - INFO - Shutting down...
+2023-08-07 05:19:13,942 - octoprint.server - INFO - Calling on_shutdown on plugins
+2023-08-07 05:19:13,944 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2023-08-07 05:19:14,030 - octoprint.plugins.obico - WARNING - WS Closed - None - None
+2023-08-07 05:19:14,046 - octoprint.events - INFO - Event loop shut down
+2023-08-07 05:19:14,046 - octoprint.server - INFO - Goodbye!
+2023-08-07 05:19:16,183 - octoprint.startup - INFO - ******************************************************************************
+2023-08-07 05:19:16,187 - octoprint.startup - INFO - Starting OctoPrint 1.9.2
+2023-08-07 05:19:16,187 - octoprint.startup - INFO - ******************************************************************************
+2023-08-07 05:19:16,589 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2023-08-07 05:19:16,608 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: online
+2023-08-07 05:19:16,609 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 1.1.1.1:53 is working
+2023-08-07 05:19:16,609 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is working
+2023-08-07 05:19:16,619 - octoprint.startup - INFO - Blacklist processing done, adding 3 blacklisted plugin versions: roomtemp (any), GcodeEditor (>=0.1.1,<=0.2.8), gcodeleveling (>=0.1.0,<=0.1.1)
+2023-08-07 05:19:16,630 - octoprint.plugin.core - INFO - Loading plugins from /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins, /octoprint/octoprint/plugins and installed plugin packages...
+2023-08-07 05:19:19,001 - octoprint.plugin.core - INFO - Plugin Pi Support Plugin (2023.5.24) did not pass check, not loading.
+2023-08-07 05:19:19,276 - octoprint.startup - INFO - Added settings overlay from plugin dashboard
+2023-08-07 05:19:19,288 - octoprint.plugin.core - INFO - Found 24 plugin(s) providing 24 mixin implementations, 62 hook handlers
+2023-08-07 05:19:19,319 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2023-08-07 05:19:19,405 - octoprint.server - INFO - Intermediary server started
+2023-08-07 05:19:19,417 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /octoprint/octoprint/uploads...
+2023-08-07 05:19:19,449 - octoprint.filemanager.storage - INFO - ... file metadata for /octoprint/octoprint/uploads initialized successfully.
+2023-08-07 05:19:19,454 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: "Need(method='role', value='plugin_action_command_notification_show')")
+2023-08-07 05:19:19,454 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: "Need(method='role', value='plugin_action_command_notification_clear')")
+2023-08-07 05:19:19,454 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: "Need(method='role', value='plugin_action_command_prompt_interact')")
+2023-08-07 05:19:19,455 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: "Need(method='role', value='plugin_announcements_read')")
+2023-08-07 05:19:19,455 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: "Need(method='role', value='plugin_announcements_manage'), Need(method='role', value='plugin_announcements_read')")
+2023-08-07 05:19:19,455 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: "Need(method='role', value='plugin_appkeys_admin')")
+2023-08-07 05:19:19,456 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_GRANT (needs: "Need(method='role', value='plugin_appkeys_user')")
+2023-08-07 05:19:19,456 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: "Need(method='role', value='plugin_backup_access')")
+2023-08-07 05:19:19,456 - octoprint.server - INFO - Added new permission from plugin dashboard: PLUGIN_DASHBOARD_ADMIN (needs: "Need(method='role', value='plugin_dashboard_admin')")
+2023-08-07 05:19:19,457 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: "Need(method='role', value='plugin_firmware_check_display')")
+2023-08-07 05:19:19,457 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: "Need(method='role', value='plugin_logging_manage')")
+2023-08-07 05:19:19,458 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_LIST (needs: "Need(method='role', value='plugin_pluginmanager_list')")
+2023-08-07 05:19:19,458 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: "Need(method='role', value='plugin_pluginmanager_manage')")
+2023-08-07 05:19:19,458 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: "Need(method='role', value='plugin_pluginmanager_manage'), Need(method='role', value='plugin_pluginmanager_install')")
+2023-08-07 05:19:19,459 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: "Need(method='role', value='plugin_softwareupdate_check')")
+2023-08-07 05:19:19,460 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: "Need(method='role', value='plugin_softwareupdate_update')")
+2023-08-07 05:19:19,462 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CONFIGURE (needs: "Need(method='role', value='plugin_softwareupdate_configure')")
+2023-08-07 05:19:19,476 - octoprint.printer.standard - INFO - Using print time estimator provided by PrintTimeGenius
+2023-08-07 05:19:19,535 - octoprint.plugins.softwareupdate - INFO - Version cache was created for another version of OctoPrint, not using it
+2023-08-07 05:19:19,540 - octoprint.plugins.softwareupdate - INFO - Loaded update log from disk
+2023-08-07 05:19:20,890 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:19:22,308 - octoprint.util.pip - INFO - Version of pip is 22.0.4
+2023-08-07 05:19:22,324 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:19:22,324 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:19:22,460 - octoprint.plugin.core - INFO - Initialized 24 plugin implementation(s)
+2023-08-07 05:19:22,496 - octoprint.plugins.Octoslack - INFO - Attempting to detect vcgencmd path for querying RasberryPi temperature information
+2023-08-07 05:19:22,497 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /opt/vc/bin/vcgencmd
+2023-08-07 05:19:22,499 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /usr/bin/vcgencmd
+2023-08-07 05:19:22,501 - octoprint.plugins.Octoslack - INFO - Searching path for vcgencmd: /bin/vcgencmd
+2023-08-07 05:19:22,502 - octoprint.plugins.Octoslack - WARNING - Attempting to detect vcgencmd path for querying RasberryPi temperature information
+2023-08-07 05:19:22,815 - octoprint.plugins.uicustomizer - INFO - Downloaded theme: https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/darkgreen.css into: /octoprint/plugins/lib/python3.8/site-packages/octoprint_uicustomizer/static/themes/css/darkgreen.css
+2023-08-07 05:19:23,101 - octoprint - INFO - Installing webcam compat overlay for configured default webcam <octoprint.webcams.ProvidedWebcam object at 0x7fa98c8f3dc0>
+2023-08-07 05:19:23,104 - octoprint.plugin.core - INFO - 24 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/backup
+|  Bed Visualizer (1.1.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_bedlevelvisualizer
+|  Classic Webcam (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/classicwebcam
+|  Core Wizard (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/corewizard
+|  Dashboard (1.19.10) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_dashboard
+|  Discovery (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/errortracking
+|  Event Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/eventmanager
+|  File Check (2021.2.23) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_file_check
+|  Firmware Check (2021.10.11) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/logging
+|  Obico for OctoPrint (2.4.3) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_obico
+|  Octoslack (2.2.0) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_Octoslack
+|  Plugin Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/pluginmanager
+|  PrintTimeGenius Plugin (2.3.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_PrintTimeGenius
+|  Software Update (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/softwareupdate
+|  UI Customizer (0.1.9.4) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_uicustomizer
+|  Virtual Printer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2023-08-07 05:19:23,120 - octoprint.environment - INFO - Detected environment is Python 3.8.16 under Linux (linux). Details:
+|  hardware:
+|    cores: 4
+|    freq: 2640.0
+|    ram: 4009541632
+|  os:
+|    bits: 64
+|    id: linux
+|    platform: linux
+|  python:
+|    pip: 22.0.4
+|    version: 3.8.16
+2023-08-07 05:19:23,144 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/webassets...
+2023-08-07 05:19:23,146 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/.webassets-cache...
+2023-08-07 05:19:23,148 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/.webassets-manifest.json...
+2023-08-07 05:19:23,378 - octoprint.plugins.bedlevelvisualizer - WARNING - The Blueprint of this plugin is relying on the default implementation of is_blueprint_csrf_protected (newly added in OctoPrint 1.8.3), which in a future version will be switched from False to True for security reasons. Plugin authors should ensure they explicitly declare the CSRF protection status in their BlueprintPlugin mixin implementation. Recommendation is to enable CSRF protection and exempt views that must not use it with the octoprint.plugin.BlueprintPlugin.csrf_exempt decorator.
+2023-08-07 05:19:23,378 - octoprint.server - WARNING - CSRF Protection for Blueprint of plugin bedlevelvisualizer is DISABLED
+2023-08-07 05:19:23,382 - octoprint.plugins.obico - WARNING - The Blueprint of this plugin is relying on the default implementation of is_blueprint_csrf_protected (newly added in OctoPrint 1.8.3), which in a future version will be switched from False to True for security reasons. Plugin authors should ensure they explicitly declare the CSRF protection status in their BlueprintPlugin mixin implementation. Recommendation is to enable CSRF protection and exempt views that must not use it with the octoprint.plugin.BlueprintPlugin.csrf_exempt decorator.
+2023-08-07 05:19:23,383 - octoprint.server - WARNING - CSRF Protection for Blueprint of plugin obico is DISABLED
+2023-08-07 05:19:23,769 - octoprint.settings - WARNING - DeprecationWarning: Detected access to deprecated settings path ['webcam', 'snapshot'], returned value is derived from compatibility overlay. Please use the webcam system introduced with 1.9.0, this compatibility layer will be removed in a future release.
+2023-08-07 05:19:23,786 - octoprint.server - INFO - Shutting down intermediary server...
+2023-08-07 05:19:24,134 - octoprint.server - INFO - Intermediary server shut down
+2023-08-07 05:19:24,137 - octoprint.events - INFO - Processing startup event, this is our first event
+2023-08-07 05:19:24,137 - octoprint.events - INFO - Adding 1 events to queue that were held back before startup event
+2023-08-07 05:19:24,138 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2023-08-07 05:19:24,151 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2023-08-07 05:19:24,156 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2023-08-07 05:19:24,261 - octoprint.server - INFO - Trying to connect to configured serial port None
+2023-08-07 05:19:24,285 - octoprint.plugins.softwareupdate - INFO - Fetching check overlays from https://plugins.octoprint.org/update_check_overlay.json
+2023-08-07 05:19:24,373 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2023-08-07 05:19:24,784 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2023-08-07 05:19:24,802 - octoprint.server - INFO - Starting autorefresh of serial port list
+2023-08-07 05:19:24,843 - octoprint.server - INFO - Autorefresh of serial port list stopped
+2023-08-07 05:19:24,867 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 7 port/baudrate candidates: /dev/ttyUSB0@115200, /dev/ttyUSB0@250000, /dev/ttyUSB0@230400, /dev/ttyUSB0@57600, /dev/ttyUSB0@38400, /dev/ttyUSB0@19200, /dev/ttyUSB0@9600
+2023-08-07 05:19:24,893 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyUSB0, baudrate 115200
+2023-08-07 05:19:24,895 - octoprint.util.comm - INFO - Connecting to port /dev/ttyUSB0, baudrate 115200
+2023-08-07 05:19:24,912 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2023-08-07 05:19:24,942 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2023-08-07 05:19:25,095 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2023-08-07 05:19:25,107 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2023-08-07 05:19:25,270 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2023-08-07 05:19:25,367 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2023-08-07 05:19:26,027 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Kamalian Print"._http._tcp.local.' for _http._tcp.local.
+2023-08-07 05:19:26,808 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2023-08-07 05:19:26,913 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Kamalian Print"._octoprint._tcp.local.' for _octoprint._tcp.local.
+2023-08-07 05:19:26,917 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance "Kamalian Print" for SSDP
+2023-08-07 05:19:26,946 - octoprint.server - INFO - Listening on http://0.0.0.0:5000
+2023-08-07 05:19:26,997 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-07 05:19:27,029 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2023-08-07 05:19:27,332 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:19:27,333 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:19:27,333 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:19:27,387 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-07 05:19:28,220 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2023-08-07 05:19:28,446 - octoprint.util.comm - INFO - Printer reports firmware name "Marlin Creality 3D"
+2023-08-07 05:19:28,457 - octoprint.util.comm - INFO - Firmware states that it supports temperature autoreporting
+2023-08-07 05:19:28,525 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2023-08-07 05:19:28,526 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2023-08-07 05:19:28,526 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2023-08-07 05:19:28,531 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 195.8GB. That is considered sufficient for updating.
+2023-08-07 05:19:29,465 - octoprint.plugins.bedlevelvisualizer - INFO - OctoPrint-BedLevelVisualizer loaded!
+2023-08-07 05:19:29,465 - octoprint.plugins.dashboard - INFO - Dashboard started
+2023-08-07 05:19:29,495 - octoprint.JsFrontendErrors(Dash) - INFO - Js Logger (Dash) started
+2023-08-07 05:19:29,514 - octoprint.plugins.uicustomizer - INFO - UI Customizer is initialized.
+2023-08-07 05:19:29,880 - octoprint.plugins.obico - INFO - Linked printer: {'is_pro': True, 'id': 3, 'name': 'Ender Tree'}
+2023-08-07 05:19:29,958 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'base_url': 'http://192.168.1.190/', 'path': '/', 'query_string': 'l10n=en'}
+2023-08-07 05:19:29,981 - octoprint.plugins.obico - INFO - Starting webcam streamer
+2023-08-07 05:19:30,128 - octoprint.plugins.obico - WARNING - Janus setup failed. Skipping Janus connection. Error: 
+b"dpkg-query: package 'janus' is not installed\nUse dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+2023-08-07 05:19:30,651 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2023-08-07 05:19:31,002 - backoff - INFO - Backing off wait_for_janus(...) for 0.8s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:32,795 - backoff - INFO - Backing off wait_for_janus(...) for 0.7s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:34,570 - backoff - INFO - Backing off wait_for_janus(...) for 1.6s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:34,650 - octoprint.server.util.sockjs - INFO - Client connection closed: 192.168.1.117
+2023-08-07 05:19:35,144 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-07 05:19:35,167 - octoprint.server.util.sockjs - INFO - Client connection closed: 192.168.1.117
+2023-08-07 05:19:35,750 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-07 05:19:37,168 - backoff - INFO - Backing off wait_for_janus(...) for 1.0s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:39,245 - backoff - INFO - Backing off wait_for_janus(...) for 11.0s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:40,321 - octoprint.server.preemptive_cache - INFO - ... done in 10.36s
+2023-08-07 05:19:51,228 - backoff - INFO - Backing off wait_for_janus(...) for 0.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:19:52,641 - backoff - INFO - Backing off wait_for_janus(...) for 22.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:20:16,058 - backoff - INFO - Backing off wait_for_janus(...) for 102.1s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:21:59,284 - backoff - INFO - Backing off wait_for_janus(...) for 114.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:23:54,816 - backoff - ERROR - Giving up wait_for_janus(...) after 10 tries (ConnectionRefusedError: [Errno 111] Connection refused)
+2023-08-07 05:34:19,321 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 05:49:19,322 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 06:04:19,323 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 06:19:19,324 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 06:34:19,325 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 06:49:19,327 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 07:04:19,328 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 07:19:19,329 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 07:34:19,330 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 07:37:26,166 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-07 07:49:19,331 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 08:04:19,333 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 08:19:19,334 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 08:34:19,335 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 08:49:19,337 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 09:04:19,338 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 09:10:54,859 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-07 09:19:19,339 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 09:34:19,340 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 09:49:19,341 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 10:04:19,342 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 10:19:19,344 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 10:34:19,345 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 10:49:19,346 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 11:04:19,347 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 11:19:19,348 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 11:34:19,350 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 11:49:19,351 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 12:04:19,352 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 12:19:19,354 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 12:34:19,355 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 12:49:19,357 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 13:04:19,358 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 13:19:19,359 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 13:34:19,361 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 13:49:19,361 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 14:04:19,363 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 14:19:19,363 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 14:34:19,364 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 14:49:19,365 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 15:04:19,366 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 15:19:19,368 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 15:34:19,369 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 15:49:19,371 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 16:04:19,372 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 16:19:19,373 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 16:34:19,375 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 16:49:19,377 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 17:04:19,378 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 17:19:19,380 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 17:34:19,381 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 17:49:19,382 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 18:04:19,383 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 18:19:19,384 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 18:34:19,386 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 18:49:19,387 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 19:04:19,388 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 19:19:19,389 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 19:34:19,390 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 19:49:19,391 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 20:04:19,393 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 20:19:19,394 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 20:34:19,396 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 20:49:19,397 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 21:04:19,398 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 21:19:19,399 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 21:34:19,400 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 21:49:19,401 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 22:04:19,402 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 22:19:19,403 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 22:34:19,405 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 22:49:19,406 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 23:04:19,408 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 23:19:19,409 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 23:34:19,411 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-07 23:49:19,412 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 00:04:19,413 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 00:19:19,415 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 00:34:19,416 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 00:49:19,417 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 01:04:19,419 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 01:19:19,420 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 01:34:19,420 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 01:49:19,421 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 02:04:19,422 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 02:19:19,423 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 02:34:19,424 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 02:49:19,425 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 02:50:01,427 - octoprint.server.util.sockjs - INFO - Client connection closed: 192.168.1.117
+2023-08-08 03:03:20,901 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-08 03:04:19,426 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 03:19:19,427 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 03:34:19,428 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 03:49:19,429 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 04:04:19,430 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 04:19:19,430 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 04:34:19,431 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 04:49:19,432 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 05:04:19,433 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 05:05:36,477 - octoprint.plugins.uicustomizer - INFO - Checking for updated themes
+2023-08-08 05:06:08,173 - octoprint.server.util.sockjs - INFO - New connection from client: 192.168.1.117
+2023-08-08 05:06:09,373 - octoprint.server.util.sockjs - INFO - Client connection closed: 192.168.1.117

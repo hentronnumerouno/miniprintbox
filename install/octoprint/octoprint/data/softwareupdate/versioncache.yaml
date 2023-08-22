@@ -1,0 +1,163 @@
+Octoslack:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 1ff1273963703c353c956c7f111a26a4
+  information:
+    local:
+      name: 2.2.0
+      value: 2.2.0
+    needs_online: true
+    remote:
+      name: 2.2.0 - Migration to native Slack libraries
+      release_notes: https://github.com/fraschetti/Octoslack/releases/tag/2.2.0
+      value: 2.2.0
+  online: true
+  possible: true
+  timestamp: 1691385567.3616166
+PrintTimeGenius:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 08fb44e10635c1c3ee3a398c5ff96277
+  information:
+    local:
+      name: 2.3.1
+      value: 2.3.1
+    needs_online: true
+    remote:
+      name: '2.3.1: Minor release'
+      release_notes: https://github.com/eyal0/OctoPrint-PrintTimeGenius/releases/tag/2.3.1
+      value: 2.3.1
+  online: true
+  possible: true
+  timestamp: 1691385567.3570607
+__version: 1.9.2
+bedlevelvisualizer:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: bbdc97929c3b38f1afb78f104f4ad146
+  information:
+    local:
+      name: 1.1.1
+      value: 1.1.1
+    needs_online: true
+    remote:
+      name: 1.1.1
+      release_notes: https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/releases/tag/1.1.1
+      value: 1.1.1
+  online: true
+  possible: true
+  timestamp: 1691385567.3339431
+dashboard:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 57643fe05fd860fa9cb705b9e9f80a51
+  information:
+    local:
+      name: 1.19.10
+      value: 1.19.10
+    needs_online: true
+    remote:
+      name: 1.19.10
+      release_notes: https://github.com/j7126/OctoPrint-Dashboard/releases/tag/1.19.10
+      value: 1.19.10
+  online: true
+  possible: true
+  timestamp: 1691385567.3385339
+file_check:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 1fd5482b4fa54235531810fa4bf95620
+  information:
+    local:
+      name: 2021.2.23
+      value: 2021.2.23
+    needs_online: true
+    remote:
+      name: 2021.2.23
+      release_notes: https://github.com/OctoPrint/OctoPrint-FileCheck/releases/tag/2021.2.23
+      value: 2021.2.23
+  online: true
+  possible: true
+  timestamp: 1691385567.5673218
+firmware_check:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 2cc0c5c664767763a036f68d2318d063
+  information:
+    local:
+      name: 2021.10.11
+      value: 2021.10.11
+    needs_online: true
+    remote:
+      name: 2021.10.11
+      release_notes: https://github.com/OctoPrint/OctoPrint-FirmwareCheck/releases/tag/2021.10.11
+      value: 2021.10.11
+  online: true
+  possible: true
+  timestamp: 1691385568.04263
+obico:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 85dd96cb9a297b72711b5624f98d592c
+  information:
+    local:
+      name: 2.4.3
+      value: 2.4.3
+    needs_online: true
+    remote:
+      name: RTSP bug fix
+      release_notes: https://github.com/TheSpaghettiDetective/OctoPrint-Obico/releases/tag/2.4.3
+      value: 2.4.3
+  online: true
+  possible: true
+  timestamp: 1691385568.0656648
+octoprint:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 6a78838acf0ec8a012938bb2cc67efee
+  information:
+    local:
+      name: 1.9.2
+      value: 1.9.2
+    needs_online: true
+    remote:
+      name: 1.9.2
+      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.9.2
+      value: 1.9.2
+  online: true
+  possible: true
+  timestamp: 1691385567.3481328
+uicustomizer:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 6fd3896c5571e66d8052b5e9350b7de9
+  information:
+    local:
+      name: 0.1.9.4
+      value: 0.1.9.4
+    needs_online: true
+    remote:
+      name: 0.1.9.4 - 1.9.0RC3 cam
+      release_notes: https://github.com/LazeMSS/OctoPrint-UICustomizer/releases/tag/0.1.9.4
+      value: 0.1.9.4
+  online: true
+  possible: true
+  timestamp: 1691385568.0581584

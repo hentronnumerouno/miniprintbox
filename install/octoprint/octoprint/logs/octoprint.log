@@ -1,0 +1,54 @@
+2023-08-08 05:19:19,435 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 05:19:19,439 - octoprint.server - INFO - --- Log roll over detected ---------------------------------------------------
+2023-08-08 05:19:19,440 - octoprint.server - INFO - OctoPrint 1.9.2
+2023-08-08 05:19:19,443 - octoprint.plugin.core - INFO - 24 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/backup
+|  Bed Visualizer (1.1.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_bedlevelvisualizer
+|  Classic Webcam (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/classicwebcam
+|  Core Wizard (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/corewizard
+|  Dashboard (1.19.10) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_dashboard
+|  Discovery (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/errortracking
+|  Event Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/eventmanager
+|  File Check (2021.2.23) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_file_check
+|  Firmware Check (2021.10.11) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/logging
+|  Obico for OctoPrint (2.4.3) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_obico
+|  Octoslack (2.2.0) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_Octoslack
+|  Plugin Manager (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/pluginmanager
+|  PrintTimeGenius Plugin (2.3.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_PrintTimeGenius
+|  Software Update (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/softwareupdate
+|  UI Customizer (0.1.9.4) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_uicustomizer
+|  Virtual Printer (bundled) = /octoprint/plugins/lib/python3.8/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2023-08-08 05:19:19,446 - octoprint.environment - INFO - Detected environment is Python 3.8.16 under Linux (linux). Details:
+|  hardware:
+|    cores: 4
+|    freq: 2640.0
+|    ram: 4009541632
+|  os:
+|    bits: 64
+|    id: linux
+|    platform: linux
+|  python:
+|    pip: 22.0.4
+|    version: 3.8.16
+2023-08-08 05:19:19,446 - octoprint.server - INFO - ------------------------------------------------------------------------------
+2023-08-08 05:19:31,742 - octoprint.plugins.obico - WARNING - WS Closed - 1000 - 
+2023-08-08 05:34:19,436 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 05:49:19,437 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 06:04:19,438 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 06:19:19,439 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 06:34:19,440 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2023-08-08 06:34:57,575 - octoprint.server - INFO - Shutting down...
+2023-08-08 06:34:57,590 - octoprint.server - INFO - Calling on_shutdown on plugins
+2023-08-08 06:34:57,591 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2023-08-08 06:34:57,657 - octoprint.events - INFO - Event loop shut down
+2023-08-08 06:34:57,662 - octoprint.plugins.obico - WARNING - WS Closed - None - None
+2023-08-08 06:34:57,666 - octoprint.server - INFO - Goodbye!

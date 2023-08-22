@@ -1,0 +1,64 @@
+---
+- hosts: my_servers
+  connection: ssh
+  become: true
+  tasks:
+    # Stop and disable services
+    - name: Stop and disable Avahi daemon
+      service:
+        name: avahi-daemon
+        state: stopped
+        enabled: no
+  
+    # Remove containers
+    - name: Remove containers
+      docker_container:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ container_ids.stdout_lines }}"
+      when: container_ids is defined and container_ids.stdout_lines | length > 0
+    
+    #stop and remove docker
+    - name: Stop and remove docker
+      service:
+        name: docker
+        state: stopped
+        enabled: no
+
+    # Remove installed packages
+    - name: Remove installed packages
+      apt:
+        name: "{{ item }}"
+        state: absent
+      loop:
+        - gnupg
+        - gnupg2
+        - gnupg1
+        - curl
+        - ssh
+        - docker.io
+        - docker-compose
+        - avahi-daemon
+        - avahi-utils
+        - bmon
+        - iftop
+        - git
+        - python3-pip
+        - brltty  # Remove the brltty package
+
+
+
+    # Remove cloned repositories
+    - name: Remove cloned repositories
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /root/miniprintbox
+
+    # Reset hostname
+    - name: Reset hostname
+      hostname:
+        name: "{{ ansible_hostname }}"
+
+    # Perform other cleanup tasks as needed

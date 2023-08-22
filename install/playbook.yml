@@ -1,0 +1,113 @@
+---
+- hosts: my_servers
+  connection: ssh
+  become: true
+  tasks:
+    - name: Install required packages for apt-key
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - gnupg
+        - gnupg2
+        - gnupg1
+    - name: Update and upgrade packages
+      become: true
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      loop:
+        - curl
+        - ssh
+        - docker.io
+        - docker-compose
+        - avahi-daemon
+        - avahi-utils
+        - bmon
+        - iftop
+        - git
+        - python3-pip
+        
+
+    # Rest of your tasks...
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+    - name: Remove brltty package
+      apt:
+        name: brltty
+        state: absent
+
+    - name: Download and execute netdata kickstart script
+      shell: |
+        wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --stable-channel --disable-telemetry
+      args:
+        executable: /bin/bash
+        creates: /tmp/netdata-kickstart.sh
+    
+    - name: Set hostname to miniprintbox.local
+      hostname:
+        name: miniprintbox.local
+
+    - name: Install and start Avahi daemon
+      service:
+        name: avahi-daemon
+        state: started
+        enabled: yes
+
+    - name: Install and start docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Wait for docker to start
+      ansible.builtin.pause:
+        seconds: 10 
+
+
+    - name: Delete containers
+      command: docker ps -aq
+      register: container_ids
+
+    - name: Remove containers
+      docker_container:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ container_ids.stdout_lines }}"
+
+    - name: Git Clone
+      shell: rm -rf /root/miniprintbox && git clone -b main https://github.com/hentronnumerouno/miniprintbox.git
+
+    - name: Build Homer
+      ansible.builtin.command: bash homer/homerstart.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+
+    - name: Build Obico
+      ansible.builtin.command: bash obico-server/rebuild-obico.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+
+    - name: Build Octoprint
+      ansible.builtin.command: bash octoprint/rebuild-octoprint.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+
+    - name: UptimeCheck
+      wait_for:
+        host: localhost
+        port: "{{ item.port }}"
+        delay: 2
+        timeout: "{{ item.timeout | default(300) }}"
+      loop:
+        - { name: "Octoprint", port: 80, timeout: 300 }
+        - { name: "Obico/Spaghetti Dectective", port: 3334, timeout: 300 }
+        - { name: "Homer Dashboard", port: 8085, timeout: 300 }

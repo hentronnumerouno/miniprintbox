@@ -1,0 +1,30 @@
+print_history:
+- analysisFirstFilamentPrintTime: 13.019669283583426
+  analysisLastFilamentPrintTime: 13956.335721311536
+  analysisPrintTime: 13962.36270503611
+  compensatedPrintTime: 14039.138095486956
+  firstFilamentPrintTime: 217.35230873699766
+  lastFilamentPrintTime: 14693.888507987998
+  payload:
+    name: CE3_18650_v3_U18-34.gcode
+    origin: local
+    owner: admin
+    path: CE3_18650_v3_U18-34.gcode
+    size: 20075327
+    time: 14701.046370205993
+  timestamp: 1686832484.834844
+- analysisFirstFilamentPrintTime: 13.019669283583426
+  analysisLastFilamentPrintTime: 4148.4016622749905
+  analysisPrintTime: 4154.19403055409
+  compensatedPrintTime: 4154.19403055409
+  firstFilamentPrintTime: 87.36408541700075
+  lastFilamentPrintTime: 4606.751717366002
+  payload:
+    name: CE3_18650_cap_v3.gcode
+    origin: local
+    owner: admin
+    path: CE3_18650_cap_v3.gcode
+    size: 3831185
+    time: 4615.209675408005
+  timestamp: 1686817670.5983052
+version: 2.3.0

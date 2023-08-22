@@ -66,10 +66,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - Pages:
+  - Docs:
     - Introduction: index.md
     - Installation: Installation.md
     - Configuration: Configuration.md
     - Uninstallation: Uninstallation.md
-
-copyright: Made by Humans in the USA
+    - Troubleshooting: Troubleshooting.md
+copyright: Made by Humans in the USA 🇺🇸

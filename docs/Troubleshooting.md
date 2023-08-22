@@ -23,3 +23,7 @@ Please note that these are the failures modes discovered during testing and are 
     `user@test-os:~/Documents/miniprintbox/install/octoprint/octoprint/octoprint`
     - Change the current directory to `wherever_you_cloned_the_repo/miniprintbox/install/octoprint`
     - Rebuild the container `docker-compose up -d --force-recreate`
+- Cause 2:
+    - Breaking change from Octoprint update
+- Fix 2: 
+    - Confirm that the docker image used for Octoprint is `octoprint/octoprint@sha256:f50ab403cec9979562b0a9da31167d36d653dad1b9271589603e44caf42517f0`.

@@ -68,6 +68,11 @@
         state: started
         enabled: yes
 
+    - name: Wait for docker to start
+      ansible.builtin.pause:
+        seconds: 10 
+
+
     - name: Delete containers
       command: docker ps -aq
       register: container_ids
@@ -96,13 +101,13 @@
       args:
         chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
 
-
     - name: UptimeCheck
       wait_for:
         host: localhost
-        port: "{{ item }}"
+        port: "{{ item.port }}"
         delay: 2
-        timeout: 300  # Adjust this timeout as needed
+        timeout: "{{ item.timeout | default(300) }}"
       loop:
-        - 80
-        - 3334
+        - { name: "Octoprint", port: 80, timeout: 300 }
+        - { name: "Obico/Spaghetti Dectective", port: 3334, timeout: 300 }
+        - { name: "Homer Dashboard", port: 8085, timeout: 300 }

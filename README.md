@@ -10,7 +10,7 @@ All-in-one solution for monitoring 3d prints on a budget. Leverage the power of 
 - [Homer](https://github.com/bastienwirtz/homer)
     - Dashboard for all of the apps!
 
-### Notification Support :rocket:
+### Notification Support: :rocket:
 Octoprint Supported via [Octoslack](https://plugins.octoprint.org/plugins/Octoslack/)
 
     - Slack
@@ -31,7 +31,7 @@ Obico Supported Natively:
     - Pushover
     - Slack
 
-### Optional Features for Remote Access (Future Features)
+### Optional Features for Remote Access (Future Features):
 - Twingate
 - Cloudflare Tunnels
 - Netmaker

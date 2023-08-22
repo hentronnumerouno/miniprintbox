@@ -1,5 +1,6 @@
 [my_servers]
-192.168.1.239 ansible_user=root
+#192.168.1.239 ansible_user=root
+192.168.1.159 ansible_user=root
 
 #127.0.0.1 ansible_connection=local
 #uncomment line above to run script on local machine

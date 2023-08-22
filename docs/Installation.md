@@ -4,11 +4,22 @@ Tested on Ubuntu 22.04, other versions may work as well.
 
     Always ensure that important data is backed up before executing this script.
 
-Clone Git Repo:
+#### Clone Git Repo:
 
 ``` 
 git clone https://github.com/hentronnumerouno/miniprintbox.git 
 ```
+
+#### Change IP address to that of target machine
+
+```
+nano ~/miniprintbox/install/inventory.yml
+
+```
+
+##### Note: This script can be deployed on the local pc. 
+- If wanted, uncomment this line in the inventory.yml files (one file in the 'install' directory and another in the 'remove' directory) `#127.0.0.1 ansible_connection=local
+`
 
 Begin Installation:
 

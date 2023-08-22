@@ -25,12 +25,6 @@
         state: stopped
         enabled: no
 
-    - name: Remove docker /etc/
-      shell: rm -rf /etc/docker
-    
-    - name: Remove docker /var/lib
-      shell: rm -rf /var/lib/docker
-
     # Remove installed packages
     - name: Remove installed packages
       apt:

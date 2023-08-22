@@ -1,5 +1,5 @@
 ## Because sometimes it just doesn't work...
-Please note that these are the failures modes discovered during testing and are by no means exclusive to the failures that may arise during use. Please open a pull request with the issues and issue description so it can be added to the troubleshooting documentation. [https://github.com/hentronnumerouno/miniprintbox/pulls](miniprintbox.com/pulls)
+Please note that these are the failures modes discovered during testing and are by no means exclusive to the failures that may arise during use. Please open a pull request with the issues and issue description so it can be added to the troubleshooting documentation. https://github.com/hentronnumerouno/miniprintbox/pulls
 ### Failure Modes:
 
 #### No Image in Octoprint or Obico?

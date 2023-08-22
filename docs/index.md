@@ -35,3 +35,7 @@ Obico Supported Natively:
 - Twingate
 - Cloudflare Tunnels
 - Netmaker
+
+### Future Features:
+- Daily backup and restore functionality
+- Container management gui

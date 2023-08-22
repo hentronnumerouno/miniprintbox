@@ -10,6 +10,13 @@
         state: stopped
         enabled: no
     
+    # Stop and disable docker
+    - name: Stop and disable docker daemon
+      service:
+        name: docker
+        state: stopped
+        enabled: no
+
     # Remove containers
     - name: Remove containers
       docker_container:

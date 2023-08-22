@@ -84,7 +84,7 @@
       loop: "{{ container_ids.stdout_lines }}"
 
     - name: Git Clone
-      shell: rm -rf /root/miniprintbox && git clone -b dev https://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@github.com/hentronnumerouno/miniprintbox.git
+      shell: rm -rf /root/miniprintbox && git clone -b main https://github.com/hentronnumerouno/miniprintbox.git
 
     - name: Build Homer
       ansible.builtin.command: bash homer/homerstart.sh

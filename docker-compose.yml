@@ -8,3 +8,5 @@ services:
     volumes:
 #      - /root/miniprintbox/:/docs
       - ./:/docs
+
+    restart: unless-stopped

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="125.1296mm"
+   height="29.613422mm"
+   viewBox="0 0 125.1296 29.613422"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="mpb2.svg"
+   inkscape:export-filename="../../../../../../../home/henry/Downloads/mpb2.svg"
+   inkscape:export-xdpi="428.85959"
+   inkscape:export-ydpi="428.85959"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.8671071"
+     inkscape:cx="227.62486"
+     inkscape:cy="105.24303"
+     inkscape:window-width="1920"
+     inkscape:window-height="939"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.237825,-81.630582)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.423;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1"
+       width="123.7066"
+       height="28.19042"
+       x="44.949326"
+       y="82.342079"
+       rx="3.9090438" />
+    <rect
+       style="fill:#ff2a2a;fill-opacity:1;stroke-width:0.264019"
+       id="rect2"
+       width="13.520823"
+       height="26.767673"
+       x="100.04221"
+       y="83.053452" />
+    <circle
+       style="fill:#31ff0b;fill-opacity:1;stroke-width:0.264583"
+       id="path2"
+       cx="158.81206"
+       cy="96.440147"
+       r="4.2813849" />
+  </g>
+</svg>

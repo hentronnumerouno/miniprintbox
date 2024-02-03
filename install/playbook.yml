@@ -86,17 +86,17 @@
     - name: Build Homer
       ansible.builtin.command: bash homer/homerstart.sh
       args:
-        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+        chdir: "{{ ansible_env.PWD }}/install"
 
     - name: Build Obico
       ansible.builtin.command: bash obico-server/rebuild-obico.sh
       args:
-        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+        chdir: "{{ ansible_env.PWD }}/install"
 
     - name: Build Octoprint
       ansible.builtin.command: bash octoprint/rebuild-octoprint.sh
       args:
-        chdir: "{{ ansible_env.PWD }}/miniprintbox/install"
+        chdir: "{{ ansible_env.PWD }}/install"
 
     - name: UptimeCheck
       wait_for:

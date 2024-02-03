@@ -83,9 +83,6 @@
         state: absent
       loop: "{{ container_ids.stdout_lines }}"
 
-    - name: Git Clone
-      shell: rm -rf /root/miniprintbox && git clone -b main https://github.com/hentronnumerouno/miniprintbox.git
-
     - name: Build Homer
       ansible.builtin.command: bash homer/homerstart.sh
       args:

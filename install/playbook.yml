@@ -84,17 +84,17 @@
       loop: "{{ container_ids.stdout_lines }}"
 
     - name: Build Homer
-      ansible.builtin.command: bash homer/homerstart.sh
+      shell: bash homer/homerstart.sh
       args:
         chdir: "{{ ansible_env.PWD }}"
 
     - name: Build Obico
-      ansible.builtin.command: bash obico-server/rebuild-obico.sh
+      shell:: bash obico-server/rebuild-obico.sh
       args:
         chdir: "{{ ansible_env.PWD }}"
 
     - name: Build Octoprint
-      ansible.builtin.command: bash octoprint/rebuild-octoprint.sh
+      shell:: bash octoprint/rebuild-octoprint.sh
       args:
         chdir: "{{ ansible_env.PWD }}"
 

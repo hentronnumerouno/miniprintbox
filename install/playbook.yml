@@ -89,12 +89,12 @@
         chdir: "{{ ansible_env.PWD }}"
 
     - name: Build Obico
-      shell:: bash obico-server/rebuild-obico.sh
+      shell: bash obico-server/rebuild-obico.sh
       args:
         chdir: "{{ ansible_env.PWD }}"
 
     - name: Build Octoprint
-      shell:: bash octoprint/rebuild-octoprint.sh
+      shell: bash octoprint/rebuild-octoprint.sh
       args:
         chdir: "{{ ansible_env.PWD }}"
 

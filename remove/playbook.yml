@@ -46,7 +46,10 @@
         - python3-pip
         - brltty  # Remove the brltty package
 
-
+    - name: Remove Wi-Fi Connect
+      shell: bash wificonnect/service/removeservice.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}"
 
     # Remove cloned repositories
     - name: Remove cloned repositories

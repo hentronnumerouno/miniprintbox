@@ -111,7 +111,7 @@
 
 
     - name: Install Wi-Fi Dependencies
-      shell: pip -r install requirements.txt
+      shell: pip install -r requirements.txt
       args:
         chdir: "{{ ansible_env.PWD }}/wificonnect"
 

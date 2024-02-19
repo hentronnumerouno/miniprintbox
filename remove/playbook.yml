@@ -47,7 +47,7 @@
         - brltty  # Remove the brltty package
 
     - name: Remove Wi-Fi Connect
-      shell: bash wificonnect/service/removeservice.sh
+      shell: rm /etc/systemd/system/wificonnect.service
       args:
         chdir: "{{ ansible_env.PWD }}"
 

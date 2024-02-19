@@ -108,3 +108,19 @@
         - { name: "Octoprint", port: 80, timeout: 300 }
         - { name: "Obico/Spaghetti Dectective", port: 3334, timeout: 300 }
         - { name: "Homer Dashboard", port: 8085, timeout: 300 }
+
+
+    - name: Install Wi-Fi Dependencies
+      shell: pip -r install requirements.txt
+      args:
+        chdir: "{{ ansible_env.PWD }}/wificonnect"
+
+    - name: Remove Wi-Fi Connect
+      shell: bash wificonnect/service/removeservice.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}"
+
+    - name: Install Wi-Fi Connect
+      shell: bash wificonnect/service/installservice.sh
+      args:
+        chdir: "{{ ansible_env.PWD }}"

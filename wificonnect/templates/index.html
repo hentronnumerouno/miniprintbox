@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Network Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        select, input[type="password"], input[type="submit"] {
+            width: 90%;
+            padding: 20px; /* Increase the size of the password input */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .password-input {
+            display: none;
+        }
+
+        #connectButton {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #connectButton:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Style for the status message and checkmark */
+        #statusDiv {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .checkmark {
+            color: green;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available WiFi Networks:</h1>
+    <div class="container">
+        <form method="POST" action="/connect">
+            <select name="network" id="networkSelect" onchange="showPasswordInput()">
+                <option value="">Select a WiFi network</option>
+                {% for network in networks %}
+                    <option value="{{ network }}">{{ network }}</option>
+                {% endfor %}
+            </select>
+            <div class="password-input">
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+            <input type="submit" value="Connect" id="connectButton" disabled>
+        </form>
+
+        <!-- Add a status div to display the ping check result -->
+        <div id="statusDiv"></div>
+    </div>
+
+    <script>
+        function showPasswordInput() {
+            var networkSelect = document.getElementById("networkSelect");
+            var connectButton = document.getElementById("connectButton");
+            var passwordInput = document.querySelector(".password-input");
+
+            if (networkSelect.value !== "") {
+                passwordInput.style.display = "block";
+                connectButton.disabled = false;
+            } else {
+                passwordInput.style.display = "none";
+                connectButton.disabled = true;
+            }
+        }
+
+        // Function to update the status div with ping check result
+        function updateStatus(statusMessage, success) {
+            var statusDiv = document.getElementById("statusDiv");
+            statusDiv.textContent = statusMessage;
+
+            if (success) {
+                // Add a green checkmark
+                var checkmark = document.createElement("span");
+                checkmark.className = "checkmark";
+                checkmark.textContent = "✔";
+                statusDiv.appendChild(checkmark);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -18,6 +18,14 @@
       loop: "{{ container_ids.stdout_lines }}"
       when: container_ids is defined and container_ids.stdout_lines | length > 0
     
+    # Remove Netdata
+    - name: Remove containers
+      shell: wget -O /tmp/netdata-kickstart.sh https://get.netdata.cloud/kickstart.sh && sh /tmp/netdata-kickstart.sh --uninstall
+      args:
+        chdir: "{{ ansible_env.PWD }}"
+
+
+
     #stop and remove docker
     - name: Stop and remove docker
       service:

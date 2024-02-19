@@ -4,8 +4,8 @@ After=network-online.target
 
 [Service]
 User=root
-WorkingDirectory=/root/wificonnect
-ExecStart=/usr/bin/python3.8 /root/wificonnect/app2.py
+WorkingDirectory=/root/miniprintbox/install
+ExecStart=/usr/bin/python3.8 /root/miniprintbox/install/wificonnect/app2.py
 Restart=always
 
 [Install]

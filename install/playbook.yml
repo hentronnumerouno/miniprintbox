@@ -120,7 +120,12 @@
       args:
         chdir: "{{ ansible_env.PWD }}"
 
+    - name: Copy Wi-Fi Connect Files
+      shell: cp -r wificonnect/service/wificonnect.service /etc/systemd/system/
+      args:
+        chdir: "{{ ansible_env.PWD }}"
+
     - name: Install Wi-Fi Connect
-      shell: bash wificonnect/service/installservice.sh
+      shell: sudo systemctl daemon-reload && sudo systemctl enable wificonnect && sudo systemctl start wificonnect && sudo systemctl status wificonnect
       args:
         chdir: "{{ ansible_env.PWD }}"

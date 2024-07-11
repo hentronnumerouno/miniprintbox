@@ -1,21 +1,7 @@
 import subprocess
 import time
-import json
 from flask import Flask, render_template, request, redirect, url_for, flash
 
-
-def save_wifi_credentials(ssid, password):
-    try:
-        with open('wifi_credentials.txt', 'r') as f:
-            existing_networks = json.load(f) if len(json.load(open('wifi_credentials.txt'))) > 0 else []
-            new_network = {"ssid": ssid, "password": password}
-            existing_networks.append(new_network)
-            with open('wifi_credentials.txt', 'w') as file:
-                json.dump(existing_networks, file)
-    except FileNotFoundError:
-        with open('wifi_credentials.txt', 'w') as file:
-            new_network = {"ssid": ssid, "password": password}
-            json.dump([new_network], file)
 
 def check_wifi():
     try:
@@ -134,33 +120,29 @@ def connect():
         flash("Please enter a password.")
         return redirect(url_for('index'))
 
-    with open('wifi_credentials.txt', 'r') as f:
-        networks = json.load(f)
+    # Stop the adhoc network (if running)
+    stop_adhoc_network()
 
-    for network in networks:
-        if network['ssid'] == selected_network:
-            if network['password'] == password:
-                # Attempt to connect to the selected network using the saved credentials
-                success = connect_to_wifi(selected_network, password)
+    if networks:
+        # Attempt to connect to the selected network
+        success = connect_to_wifi(selected_network, password)
 
-                if success:
-                    flash(f"Connected to {selected_network} successfully!")
+        if success:
+            flash(f"Connected to {selected_network} successfully!")
 
-                    # Check internet connectivity
-                    if check_internet_connectivity():
-                        flash("Internet connection is working.")
-                    else:
-                        flash("No internet connection.")
-                else:
-                    flash(f"Failed to connect to {selected_network}. Check the network or password.")
+            # Check internet connectivity
+            if check_internet_connectivity():
+                flash("Internet connection is working.")
             else:
-                flash(f"The provided password for {selected_network} does not match any saved password.")
-    else:
-        flash(f"No saved password found for network '{selected_network}'")
+                flash("No internet connection.")
 
-    save_wifi_credentials(selected_network, password)
+        else:
+            flash(f"Failed to connect to {selected_network}. Check the password.")
+    else:
+        flash("Failed to scan available networks. Check the configuration.")
 
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4298)

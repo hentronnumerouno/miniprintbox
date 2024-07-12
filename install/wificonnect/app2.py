@@ -91,6 +91,7 @@ def connect_to_wifi(ssid, password):
     try:
         time.sleep(5)
         subprocess.run(["nmcli", "device", "wifi", "connect", ssid, "password", password], check=True)
+        subprocess.run(["nmcli", "device", "set", "wlp2s0", "autoconnect", "yes"])
 #autconnect code updates
 #        subprocess.run("nmcli", "connection", "modify", ssid, "connection.autoconnect yes" )
         if check_internet_connectivity():

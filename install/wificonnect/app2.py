@@ -26,10 +26,10 @@ def check_internet_connectivity():
 initial_connectivity = check_internet_connectivity()
 if initial_connectivity:
     print("Internet connectivity detected. Pausing for 10 seconds.")
-    time.sleep(10)
+    time.sleep()
     # Check again after 10 seconds
     if check_internet_connectivity():
-        print("Internet connectivity still present after 10 seconds.")
+        print("Internet connectivity still present after  seconds.")
         print("Pausing script. Connect to adhoc network after stopping internet connectivity.")
         while True:
             time.sleep(1)

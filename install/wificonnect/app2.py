@@ -91,12 +91,15 @@ def connect_to_wifi(ssid, password):
     try:
         time.sleep(5)
         subprocess.run(["nmcli", "device", "wifi", "connect", ssid, "password", password], check=True)
+#autconnect code updates
+#        subprocess.run("nmcli", "connection", "modify", ssid, "connection.autoconnect yes" )
         if check_internet_connectivity():
             flash("Connected to {} successfully! Internet connection is working.".format(ssid))
             stop_adhoc_network()
 
     except Exception as e:
         return False
+#nmcli connection modify CONNECTION_NAME connection.autoconnect yes|no
 
 
 # Scan available Wi-Fi networks and create the adhoc network

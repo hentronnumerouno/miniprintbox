@@ -26,10 +26,10 @@ def check_internet_connectivity():
 initial_connectivity = check_internet_connectivity()
 if initial_connectivity:
     print("Internet connectivity detected. Pausing for 10 seconds.")
-    time.sleep(10)
+    time.sleep()
     # Check again after 10 seconds
     if check_internet_connectivity():
-        print("Internet connectivity still present after 10 seconds.")
+        print("Internet connectivity still present after  seconds.")
         print("Pausing script. Connect to adhoc network after stopping internet connectivity.")
         while True:
             time.sleep(1)
@@ -91,12 +91,16 @@ def connect_to_wifi(ssid, password):
     try:
         time.sleep(5)
         subprocess.run(["nmcli", "device", "wifi", "connect", ssid, "password", password], check=True)
+        subprocess.run(["nmcli", "device", "set", "wlp2s0", "autoconnect", "yes"])
+#autconnect code updates
+#        subprocess.run("nmcli", "connection", "modify", ssid, "connection.autoconnect yes" )
         if check_internet_connectivity():
             flash("Connected to {} successfully! Internet connection is working.".format(ssid))
             stop_adhoc_network()
 
     except Exception as e:
         return False
+#nmcli connection modify CONNECTION_NAME connection.autoconnect yes|no
 
 
 # Scan available Wi-Fi networks and create the adhoc network
